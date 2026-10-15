@@ -3,27 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chuyển CSS sang SCSS</title>
+  <title>Thực hành biến và mixins Sass</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Chuyển đổi CSS sang SCSS</h1>
-    <div class="card">
-      <h2>Tổ chức mã nguồn dễ bảo trì</h2>
-      <p>Bài thực hành sử dụng biến, mixins, nesting và partials.</p>
-      <p><a class="button" href="#structure">Xem cấu trúc</a></p>
-    </div>
-    <section id="structure">
-      <h2>Cấu trúc SCSS</h2>
-      <ul>
-        <li>abstracts: biến và mixins.</li>
-        <li>base: định dạng chung.</li>
-        <li>layout: bố cục container.</li>
-        <li>components: button và card.</li>
-        <li>main.scss: tập hợp các partials.</li>
-      </ul>
-    </section>
-  </main>
+  <h1>Tối ưu CSS với biến và mixins</h1>
+  <div class="card">
+    <h2>Thẻ nội dung mẫu</h2>
+    <p>Màu sắc, kích thước chữ, padding và bóng đổ được quản lý bằng biến Sass.</p>
+    <p><a href="#details" class="button">Xem chi tiết</a></p>
+  </div>
+  <section id="details">
+    <h2>Tái sử dụng kiểu dáng</h2>
+    <p>button-style định dạng nút; box-style định dạng thẻ. Chỉnh biến trong abstracts/_variables.scss và biên dịch lại để cập nhật CSS.</p>
+  </section>
 </body>
 </html>

@@ -1,7 +1,6 @@
-// Giữ @import theo Bước 5 của đề bài.
+// Tập hợp partials theo cách dùng biến toàn cục trong mẫu bài học.
 @import "abstracts/variables";
 @import "abstracts/mixins";
-@import "base/global";
-@import "layout/container";
+@import "base/typography";
 @import "components/buttons";
 @import "components/cards";

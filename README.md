@@ -1,32 +1,36 @@
-# Chuyển đổi CSS có sẵn sang SCSS
+# Tạo mixins và biến để tối ưu CSS
 
-## File và thư mục
-- styles-original.css: CSS ban đầu theo đề.
-- main.scss: entry point, import đủ 6 partials theo Bước 5.
-- abstracts/_variables.scss: 5 biến màu sắc và bóng đổ.
-- abstracts/_mixins.scss: button-style và box-shadow.
-- base/_global.scss: body, có property nesting font: { family: ... } để giữ nguyên font-family đầu ra.
-- layout/_container.scss: container.
-- components/_buttons.scss và _cards.scss: sử dụng mixins.
-- styles.css và styles.css.map: kết quả biên dịch Sass.
-- index.html: minh họa CSS đầu ra.
+## Cấu trúc theo đề
+- abstracts/_variables.scss: đủ 6 biến với giá trị gốc.
+- abstracts/_mixins.scss: button-style($bg-color) và box-style.
+- base/_typography.scss: h1 và h2 dùng biến.
+- components/_buttons.scss: include button-style.
+- components/_cards.scss: include box-style.
+- main.scss: tập hợp partials.
+- styles-original.css: CSS trước khi tối ưu.
+- styles.css, styles.css.map: CSS được biên dịch từ main.scss.
+- index.html: trang minh họa.
 
-## Chạy và biên dịch
-Mở index.html để xem bài. Khi chỉnh SCSS cần biên dịch lại:
+## Xem và biên dịch
+Mở index.html để xem. Sau khi thay đổi SCSS, biên dịch:
 
     sass main.scss styles.css
+
+Watch:
+
     sass main.scss styles.css --watch
 
-Trên máy Long, nếu lệnh sass.cmd vẫn không hoạt động, dùng cách đã chạy thành công:
+Trên máy Long có thể dùng cách gọi Sass CLI đã hoạt động:
 
     node "%APPDATA%\npm\node_modules\sass\sass.js" main.scss styles.css
 
-## Lưu ý @import
-Bài giữ @import theo mẫu để bám sát đề. Dart Sass từ 1.80.0 đánh dấu @import là deprecated; có thể hiện cảnh báo nhưng Sass 1.105.1 vẫn biên dịch được. Dự án mới nên chuyển sang @use/@forward.
-Nguồn: https://sass-lang.com/documentation/at-rules/import/
+Ví dụ đổi $primary-color trong abstracts/_variables.scss, biên dịch lại để cập nhật màu nút. Bản nộp giữ nguyên red theo đề.
 
 ## Kiểm tra
-Biên dịch thực tế bằng Dart Sass 1.105.1 và so sánh CSS đầu ra với CSS ban đầu sau khi bỏ khác biệt định dạng. Không thêm selector hay thay đổi giá trị CSS gốc. Chưa kiểm tra trực quan trên trình duyệt.
+Đã biên dịch thực tế bằng Dart Sass 1.105.1, so sánh CSS đầu ra với styles-original.css sau khi bỏ khác biệt định dạng; các selector và giá trị giữ nguyên. Chưa kiểm tra trực tiếp trên trình duyệt.
+
+Bài dùng @import để giữ cú pháp biến toàn cục trong mẫu và nhất quán bài trước. Sass hiện cảnh báo deprecation nhưng biên dịch thành công; dự án mới nên dùng @use/@forward.
+Nguồn: https://sass-lang.com/documentation/at-rules/import/
 
 ## Nộp
-Tải toàn bộ thư mục css-to-scss lên GitHub, giữ nguyên các thư mục partials và nộp link trực tiếp đến thư mục bài.
+Tải nguyên thư mục sass-variables-mixins lên GitHub, giữ tất cả partials và CSS đầu ra. Nộp link trực tiếp đến thư mục bài.
