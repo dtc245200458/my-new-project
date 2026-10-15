@@ -1,4 +1,4 @@
-// Đề chưa cung cấp server nhận liên hệ: chỉ minh họa thao tác submit.
+// Form minh họa: đề chưa cung cấp server nhận dữ liệu.
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
     const result = document.getElementById('formResult');

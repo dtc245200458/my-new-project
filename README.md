@@ -1,19 +1,21 @@
-# Thực hành: Xây dựng Trang Chủ với Bootstrap
+# Bố cục 3 cột bằng Bootstrap Grid và Flexbox
 
-## Chạy
-Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3 và Font Awesome 6.5.2. Giữ script.js, image1.jpg và image2.jpg cùng thư mục.
+Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3 và Font Awesome 6.5.2. Giữ script.js và cả 3 ảnh JPEG cùng thư mục.
 
-## Nội dung theo đề
-- Navbar có Font Awesome fas fa-home, menu collapse.
-- Carousel heroCarousel gồm hai ảnh JPEG minh họa được vẽ riêng, cùng kích thước 1440x480; có nút trước/sau và data-bs-ride="carousel".
-- Display d-block, Flexbox d-flex, justify-content-center, align-items-center.
-- Khoảng cách dùng py-5, mt-4, mb-3.
-- Form gồm tên, email và nút Gửi.
-- Các liên kết Navbar giữ href="#" theo ví dụ.
-- Form chỉ minh họa gửi dữ liệu vì đề không có backend; script.js ngăn gửi và hiển thị thông báo, không lưu dữ liệu.
+## Đầy đủ 6 bước
+1. container mt-5, row và 3 cột col-md-4; d-flex căn giữa nội dung.
+2. container my-5 py-3 điều chỉnh khoảng cách.
+3. d-none d-md-block ẩn nội dung dưới 768px.
+4. myCarousel có 3 ảnh cùng kích thước, tự chạy và nút trước/sau.
+5. Icon fas fa-home và fas fa-paper-plane.
+6. Form Họ và tên, Email, Nội dung, nút Gửi.
 
-## Kiểm tra
-Đã kiểm tra cấu trúc HTML, liên kết ảnh, kích thước JPEG, đích collapse/carousel và cú pháp JavaScript. Chưa kiểm tra trực tiếp trên trình duyệt.
-Mở bài để thử chuyển hai ảnh, tự chạy Carousel, menu mobile và form trước khi nộp.
+Ảnh JPEG minh họa được vẽ riêng và đóng gói. Form chỉ minh họa submit vì đề không cung cấp backend, không gửi/lưu dữ liệu.
 
-Tải toàn bộ thư mục bootstrap-home lên GitHub và nộp link thư mục hoặc repository.
+## Kiểm tra trước khi nộp
+- Từ 768px: 3 cột nằm ngang và khối màu vàng hiển thị.
+- Dưới 768px: các cột xếp dọc, khối vàng ẩn.
+- Thử nút chuyển ảnh, Carousel tự chạy, icon và nút Gửi.
+
+Đã kiểm tra cấu trúc, class Bootstrap, tài nguyên ảnh, đích Carousel và cú pháp JavaScript; chưa kiểm tra trực tiếp trên trình duyệt.
+Tải toàn bộ thư mục bootstrap-three-columns lên GitHub và nộp link thư mục/repository.
