@@ -1,21 +1,23 @@
-# Thực hành: Xây dựng bố cục trang web với CSS Flexbox
+# Thực hành: Tạo Navbar với Bootstrap
 
 ## Chạy bài
-Giữ index.html và style.css cùng thư mục, mở index.html bằng trình duyệt.
+Mở index.html bằng Chrome, Edge hoặc Firefox. Cần kết nối Internet để tải Bootstrap CSS và JavaScript từ CDN.
 
 ## Nội dung
-Giữ đúng cấu trúc HTML và CSS được cung cấp trong đề:
-- Header, Navigation, Main Content, Sidebar và Footer.
-- Container Flexbox xếp dọc, cao 100vh.
-- Main Container dùng Flexbox, nội dung flex: 3 và sidebar flex: 1.
-- Media Query max-width: 768px chuyển Main Container sang column, sidebar nằm dưới nội dung.
+- Bootstrap 5.3.0 theo đề, dùng bootstrap.bundle.min.js.
+- Navbar tối, thương hiệu MyWebsite.
+- Menu Home, About, Services, Contact.
+- Dropdown Services có Web Design và SEO.
+- navbar-expand-lg: menu ngang khi màn hình từ 992px; dưới 992px hiển thị nút toggler.
+- Giữ href="#" như ví dụ mẫu; liên kết minh họa, chưa dẫn tới các trang riêng.
 
-## Kiểm tra trên trình duyệt
-1. Mở ở chiều rộng trên 768px để xem nội dung và sidebar nằm cạnh nhau.
-2. Thu nhỏ cửa sổ xuống 768px hoặc thấp hơn để xem nội dung và sidebar xếp dọc.
-3. Kiểm tra CSS được tải và các phần hiển thị đúng.
+## Tự kiểm tra trên trình duyệt
+1. Mở cửa sổ rộng từ 992px: kiểm tra menu hiển thị ngang.
+2. Nhấn Services: kiểm tra menu Web Design và SEO hiện ra; nhấn ra ngoài để đóng.
+3. Thu nhỏ cửa sổ dưới 992px: kiểm tra nút menu hiện ra, nhấn để mở và đóng menu.
+4. Khi menu mobile mở, nhấn Services để kiểm tra dropdown.
 
-Đã kiểm tra cấu trúc, liên kết file và quy tắc CSS bằng mã; chưa kiểm tra trực quan trên trình duyệt.
+Đã kiểm tra cấu trúc HTML, URL CDN, liên kết toggler/collapse và các thuộc tính Bootstrap trong mã nguồn. Chưa chạy kiểm tra trực quan hoặc thao tác trên trình duyệt.
 
 ## Nộp bài
-Tải toàn bộ thư mục flexbox-layout lên GitHub, sau đó sao chép link thư mục hoặc repository để nộp trên CodeGym.
+Tải toàn bộ thư mục bootstrap-navbar lên GitHub rồi sao chép link thư mục hoặc repository để nộp CodeGym.
