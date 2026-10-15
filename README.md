@@ -1,24 +1,18 @@
-# Gallery RWD
+# Thực hành CSS flex-grow
 
-Bản dựng theo mã mẫu:
-http://demo.codegym.vn/web/15/gallery/gallery.html
+## Chạy bài
+Giữ index.html và style.css trong cùng thư mục, mở index.html bằng trình duyệt.
 
-Mở index.html, giữ style.css và thư mục images đúng cấu trúc.
+## Yêu cầu đã triển khai
+- Container có display: flex và đúng 5 phần tử con trực tiếp.
+- Ô thứ hai có flex-grow: 1, các ô còn lại có flex-grow: 0.
+- Các ô cùng flex-basis: 80px để thấy rõ phần không gian dư được ô thứ hai nhận.
+- Container rộng 800px (gồm border), giới hạn max-width: 100%.
 
-## Breakpoint theo bản mẫu
-- Trên 700px: 4 ảnh trên một hàng, mỗi khối rộng 24.99999%.
-- Trên 500px đến 700px: 2 ảnh trên một hàng, mỗi khối rộng 49.99999%.
-- Từ 500px trở xuống: 1 ảnh trên một hàng, mỗi khối rộng 100%.
+Khi container đủ rộng 800px: vùng nội dung rộng 796px, bốn gap dùng 40px, tổng cơ sở 5 ô là 400px. Phần dư 356px được cộng vào ô thứ hai, nên ô thứ hai rộng 436px; các ô khác rộng 80px.
+flex-grow phân phối phần không gian dư, không trực tiếp chỉ định tỷ lệ kích thước cuối cùng. Khi màn hình hẹp và thiếu không gian, flex-shrink mặc định có thể làm các ô co lại.
 
-Giữ class gallery, responsive, desc, clearfix; dùng float và Media Query.
-CSS tách từ bản mẫu thành style.css.
-Ảnh tải từ tài nguyên W3Schools, cùng tên với mẫu. Không cần Internet khi mở trang.
-Nguồn ảnh: https://www.w3schools.com/css/img_fjords.jpg và img_forest.jpg, img_lights.jpg, img_mountains.jpg trong cùng thư mục CSS của W3Schools.
-Không tuyên bố sở hữu ảnh; dùng cho bài thực hành.
-
-Đã kiểm tra 4 file ảnh, liên kết nội bộ và quy tắc breakpoint.
-Chưa kiểm tra trực quan bản dựng trên trình duyệt; cần mở ở 1000px, 600px và 390px.
-
-## Nộp bài
-Tải nguyên thư mục gallery-rwd lên repository hiện có.
-Giữ đủ thư mục images và nộp link thư mục gallery-rwd trên GitHub.
+## Kiểm tra và nộp
+Đã kiểm tra cấu trúc HTML và quy tắc CSS; chưa kiểm tra trực quan trên trình duyệt.
+Mở bài trên trình duyệt, kiểm tra ô thứ hai lớn hơn các ô khác ở màn hình rộng và chụp ảnh kết quả thực tế.
+Đưa toàn bộ thư mục flex-grow lên GitHub rồi nộp link repository/thư mục và ảnh theo yêu cầu.

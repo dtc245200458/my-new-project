@@ -2,46 +2,26 @@ body {
     margin: 24px;
     font-family: Arial, sans-serif;
     color: #222;
-    line-height: 1.5;
 }
-
-h1 {
-    font-size: 28px;
+.container {
+    display: flex;
+    width: 800px;
+    max-width: 100%;
+    gap: 10px;
+    border: 2px solid #333;
+    box-sizing: border-box;
 }
-
-h2 {
-    font-size: 21px;
-}
-
-section {
-    margin-bottom: 32px;
-}
-
-.grid-container {
-    display: grid;
-}
-
-.grid-container > div {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Ví dụ 1: 2 cột, khoảng cách hàng và cột đều 20px. */
-.example-one {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-}
-
-.example-one > div {
+.item {
+    box-sizing: border-box;
+    flex-basis: 80px;
+    flex-grow: 0;
+    min-width: 0;
+    padding: 24px 4px;
     background-color: lightblue;
+    text-align: center;
+    overflow-wrap: anywhere;
 }
-
-/* Ví dụ 2: 3 cột, khoảng cách hàng 30px và cột 10px. */
-.example-two {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px 10px;
-}
-
-.example-two > div {
+.item:nth-child(2) {
+    flex-grow: 1;
     background-color: lightgreen;
 }
