@@ -1,21 +1,23 @@
-# Bài tập Bootstrap Grid System
+# Trang đăng ký với Bootstrap Forms
 
-Mở index.html bằng trình duyệt có Internet. Giữ style.css cùng thư mục.
+## Chạy
+Mở index.html bằng trình duyệt có Internet để tải Bootstrap CSS 5.3.0. Giữ script.js cùng thư mục.
 
 ## Nội dung
-Header, Bootstrap Navbar có dropdown, Main Content, Sidebar và Footer.
-Dùng container, row, col-12, col-md-8/col-md-4 và col-lg-8/col-lg-4.
+- Họ và tên, Email, Mật khẩu, Xác nhận mật khẩu dùng form-control.
+- Giới tính dùng radio cùng name="gender".
+- Sở thích dùng checkbox cùng name="hobby".
+- Quốc gia dùng form-select.
+- Nút submit dùng btn btn-primary.
+- Text dùng text-center, text-muted; layout dùng container, row, col responsive.
+- Nhãn liên kết với input bằng for/id.
 
-## Xử lý điểm chưa thống nhất trong đề
-- Phần mô tả ghi sidebar chỉ xuất hiện trên màn hình lớn, nhưng yêu cầu cụ thể ghi sidebar nằm dưới nội dung trên mobile. Bài làm theo yêu cầu cụ thể: sidebar vẫn hiển thị và xếp xuống dưới khi chiều rộng dưới 992px.
-- Bootstrap col-md-* mặc định chia cột từ 768px, trong khi đề yêu cầu từ 992px. CSS tùy chỉnh ghi đè chiều rộng thành 100% dưới 992px, giữ nguyên tên class col-md-* theo đề. Từ 992px bố cục 8/4.
+## Submit
+Đề không cung cấp backend. JavaScript ngăn chuyển trang, kiểm tra các trường bắt buộc, định dạng email, mật khẩu tối thiểu 8 ký tự và xác nhận mật khẩu trùng nhau; hiển thị thông báo minh họa khi hợp lệ. Không tạo tài khoản, không gửi dữ liệu và không lưu dữ liệu.
 
-## Kiểm tra trước khi nộp
-1. 1280px và 992px: nội dung chính và sidebar nằm cạnh nhau theo 8/4.
-2. 991px, 768px và 375px: sidebar nằm dưới, mỗi phần rộng 12 cột.
-3. Thử nút mở/đóng Navbar dưới 992px và dropdown Nội dung.
-4. Thử các liên kết đến phần tương ứng trong trang.
+## Kiểm tra
+Đã kiểm tra cấu trúc HTML, tên nhóm, nhãn, Bootstrap classes, cú pháp JavaScript và mô phỏng logic xác nhận mật khẩu/submit. Chưa kiểm tra trực tiếp trên trình duyệt.
+Trước khi nộp, mở trang ở desktop và mobile; thử bỏ trống dữ liệu, nhập hai mật khẩu khác nhau, rồi nhập dữ liệu hợp lệ và nhấn Đăng ký.
 
-Đã kiểm tra cấu trúc HTML, liên kết nội bộ, tham chiếu Bootstrap và khai báo breakpoint trong mã nguồn; chưa kiểm tra trực tiếp trên trình duyệt.
-
-Tải cả thư mục bootstrap-grid-system lên GitHub và nộp link thư mục hoặc repository trên CodeGym.
+## Nộp
+Tải toàn bộ thư mục bootstrap-registration lên GitHub và nộp link thư mục hoặc repository trên CodeGym.

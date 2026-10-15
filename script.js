@@ -1,36 +1,23 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
-    const mobileQuery = window.matchMedia('(max-width: 768px)');
+const form = document.getElementById('registrationForm');
+const password = document.getElementById('password');
+const confirmation = document.getElementById('confirmPassword');
+const result = document.getElementById('result');
 
-    function setOpen(open) {
-        navLinks.classList.toggle('active', open);
-        menuIcon.setAttribute('aria-expanded', String(open));
-        menuIcon.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
-    }
+function checkPasswords() {
+    confirmation.setCustomValidity(
+        confirmation.value !== password.value ? 'Mật khẩu xác nhận chưa khớp.' : ''
+    );
+}
 
-    menuIcon.addEventListener('click', function () {
-        setOpen(!navLinks.classList.contains('active'));
-    });
+form.addEventListener('input', () => {
+    checkPasswords();
+    result.hidden = true;
+});
 
-    navLinks.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-            setOpen(false);
-        });
-    });
-
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && navLinks.classList.contains('active')) {
-            setOpen(false);
-            menuIcon.focus();
-        }
-    });
-
-    document.addEventListener('click', function (event) {
-        if (!event.target.closest('.navbar')) setOpen(false);
-    });
-
-    mobileQuery.addEventListener('change', function () {
-        setOpen(false);
-    });
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    checkPasswords();
+    if (!form.reportValidity()) return;
+    result.textContent = 'Thông tin hợp lệ. Bạn đã hoàn thành thao tác gửi form minh họa; chưa tạo tài khoản trên server.';
+    result.hidden = false;
 });
