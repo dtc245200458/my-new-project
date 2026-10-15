@@ -1,27 +1,136 @@
-.container {
-    width: 100%;
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 20px 12px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
 }
-
-.left-column {
-    width: 60%;
+#main { width: 1000px; max-width: 100%; margin: 0 auto; }
+a { color: #175386; text-decoration: none; }
+a:hover { color: #9b332d; text-decoration: underline; }
+a:focus-visible { outline: 2px solid #175386; outline-offset: 3px; }
+h1, h2, h3, p { margin-top: 0; }
+h2 { font-size: 17px; margin-bottom: 12px; }
+h3 { font-size: 15px; margin-bottom: 8px; }
+/* Header chứa logo và banner */
+#head { height: 100px; margin-bottom: 10px; }
+.logo {
     float: left;
-    background-color: lightblue;
-    padding: 20px;
-    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #aaa;
+    background-color: #eef3f8;
+    text-align: center;
+    line-height: 98px;
+    font-size: 28px;
+    font-weight: bold;
 }
-
-.right-column {
-    width: 38%;
+.banner {
     float: right;
-    background-color: lightgreen;
-    padding: 20px;
-    /* Giữ padding trong 38% chiều rộng để không làm cột rớt xuống. */
-    box-sizing: border-box;
+    width: 790px;
+    height: 100px;
+    padding: 18px;
+    border: 1px solid #aaa;
+    text-align: center;
+    background-color: #f5f5f5;
 }
-
-/* Clearfix: giúp container bao quanh cả hai cột float. */
-.container::after {
-    content: "";
-    display: block;
-    clear: both;
+.banner h1 { font-size: 23px; margin-bottom: 5px; }
+.banner p { margin: 0; color: #666; }
+/* Liên kết đầu trang */
+#head-link {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    background-color: #f5f5f5;
+}
+#head-link a { display: inline-block; padding: 0 14px; border-right: 1px solid #bbb; }
+#head-link a:last-child { border-right: 0; }
+/* Bố cục Float ba cột: 200 + 10 + 560 + 10 + 220 = 1000px */
+#left {
+    float: left;
+    width: 200px;
+    min-height: 400px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    background-color: #f8fafb;
+}
+#content {
+    float: left;
+    width: 560px;
+    min-height: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#right {
+    float: right;
+    width: 220px;
+    min-height: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    background-color: #f8fafb;
+}
+.side-box { border: 1px solid #bbb; padding: 12px; margin-bottom: 16px; background: #fff; }
+.side-box ul { list-style: none; padding: 0; margin: 0; }
+.side-box li { margin: 8px 0; }
+/* Tin nổi bật và ảnh minh họa */
+.featured { margin-bottom: 10px; }
+.hot-news, .photo-slide { width: calc(50% - 5px); min-height: 225px; border: 1px solid #aaa; padding: 14px; }
+.hot-news { float: left; background-color: #fff9ee; }
+.photo-slide { float: right; background-color: #eef4fb; text-align: center; }
+.photo-art { height: 100px; background-color: #d6e4f3; display: grid; place-items: center; margin-bottom: 10px; }
+.photo-art span { font-size: 38px; color: #175386; }
+.photo-slide h2 { margin-bottom: 5px; }
+.photo-slide p { font-size: 12px; margin-bottom: 0; }
+/* Sáu ô tin tức */
+.news-card { float: left; width: calc((100% - 20px) / 3); min-height: 230px; padding: 10px; margin-right: 10px; margin-bottom: 10px; border: 1px solid #aaa; }
+.news-card:nth-child(3n) { margin-right: 0; }
+.news-card p { font-size: 12px; margin-bottom: 0; }
+.news-art { height: 55px; margin-bottom: 12px; border: 1px solid #c3ced8; }
+.blue { background-color: #d4e5f5; }
+.green { background-color: #deeddc; }
+.orange { background-color: #f6e3ce; }
+/* Widget bên phải */
+.widget { padding: 10px; border: 1px solid #bbb; margin-bottom: 12px; background: white; }
+.calendar { width: 100%; border-collapse: collapse; text-align: center; font-size: 10px; }
+.calendar th, .calendar td { border: 1px solid #ddd; padding: 3px 0; }
+.calendar th { background: #edf1f5; }
+.caption { font-size: 10px; color: #666; margin: 5px 0; }
+.chart { height: 95px; display: flex; align-items: flex-end; justify-content: space-around; border-left: 1px solid #aaa; border-bottom: 1px solid #aaa; padding: 0 5px; }
+.chart span { display: block; width: 22px; background-color: #6c9ac1; }
+.map svg { display: block; width: 100%; height: auto; }
+.region-label { font-size: 11px; color: #666; text-align: center; margin-bottom: 0; }
+/* Clear đẩy footer xuống dưới toàn bộ các cột float */
+#footer { clear: both; border: 1px solid #aaa; padding: 12px; background-color: #f5f5f5; font-size: 12px; }
+.footer-links { float: right; }
+.footer-links a { margin-left: 12px; }
+.clearfix::after, #footer::after { content: ""; display: block; clear: both; }
+@media (max-width: 1024px) {
+    .banner { width: calc(100% - 210px); }
+    #left { width: 20%; margin-right: 1%; }
+    #content { width: 56%; margin-right: 1%; }
+    #right { width: 22%; }
+}
+@media (max-width: 700px) {
+    #head { height: auto; }
+    #head::after { content: ""; display: block; clear: both; }
+    .logo { width: 25%; font-size: 22px; }
+    .banner { width: 73%; padding: 14px 8px; }
+    .banner h1 { font-size: 17px; }
+    .banner p { font-size: 11px; }
+    #left, #content, #right { float: none; width: 100%; margin-right: 0; min-height: 0; }
+    #head-link a { padding: 3px 8px; font-size: 12px; }
+    .footer-links { float: none; margin-top: 8px; }
+    .footer-links a { margin: 0 12px 0 0; }
+}
+@media (max-width: 420px) {
+    .news-card { width: calc((100% - 10px) / 2); }
+    .news-card:nth-child(3n) { margin-right: 10px; }
+    .news-card:nth-child(2n) { margin-right: 0; }
+    .hot-news, .photo-slide { min-height: 245px; padding: 10px; }
 }

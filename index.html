@@ -3,13 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bố cục bằng Float</title>
+    <title>Bố cục cơ bản với Div và CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="left-column">Cột bên trái chứa nội dung chính</div>
-        <div class="right-column">Cột bên phải chứa sidebar</div>
+<div id="main">
+    <div id="head">
+        <div class="logo"><a href="#main">LOGO</a></div>
+        <div class="banner"><h1>TRANG THÔNG TIN HỌC TẬP</h1><p>Header · Logo &amp; Banner</p></div>
     </div>
+    <div id="head-link">
+        <a href="#main">Home</a>
+        <a href="#students">Students</a>
+        <a href="#course">Course</a>
+        <a href="#about">About Us</a>
+        <a href="#footer">Contact Us</a>
+    </div>
+    <div id="left">
+        <div class="side-box">
+            <h2>Giới thiệu</h2>
+            <ul>
+                <li><a href="#about">Introduction</a></li>
+                <li><a href="#students">News</a></li>
+                <li><a href="#course">Education</a></li>
+                <li><a href="#course">Register</a></li>
+                <li><a href="#footer">Courses</a></li>
+            </ul>
+        </div>
+        <div class="side-box">
+            <h2>Khóa học</h2>
+            <ul>
+                <li><a href="#course">HTML &amp; CSS</a></li>
+                <li><a href="#course">JavaScript</a></li>
+                <li><a href="#course">Java</a></li>
+                <li><a href="#course">Python</a></li>
+            </ul>
+        </div>
+        <p class="region-label">Left sidebar</p>
+    </div>
+    <div id="content">
+        <div class="featured clearfix" id="about">
+            <div class="hot-news">
+                <h2>Hot news</h2>
+                <h3>Học lập trình web</h3>
+                <p>Bắt đầu với HTML và CSS để xây dựng cấu trúc và định dạng trang web.</p>
+                <a href="#course">Xem nội dung ↓</a>
+            </div>
+            <div class="photo-slide">
+                <div class="photo-art" aria-hidden="true"><span>&lt;/&gt;</span></div>
+                <h2>Photo Slide</h2>
+                <p>Hình minh họa bố cục</p>
+            </div>
+        </div>
+        <div class="news-grid clearfix" id="students">
+            <div class="news-card"><h2>News 1</h2><div class="news-art blue"></div><h3>Làm quen HTML</h3><p>Tạo tiêu đề, đoạn văn và liên kết.</p></div>
+            <div class="news-card"><h2>News 2</h2><div class="news-art green"></div><h3>Định dạng CSS</h3><p>Thay đổi màu sắc và kiểu chữ.</p></div>
+            <div class="news-card"><h2>News 3</h2><div class="news-art orange"></div><h3>Box Model</h3><p>Tìm hiểu margin, padding và border.</p></div>
+            <div class="news-card" id="course"><h2>News 4</h2><div class="news-art orange"></div><h3>Bố cục bằng Float</h3><p>Sắp xếp các vùng nội dung.</p></div>
+            <div class="news-card"><h2>News 5</h2><div class="news-art blue"></div><h3>Clear và Clearfix</h3><p>Đưa phần cuối xuống dưới các cột.</p></div>
+            <div class="news-card"><h2>News 6</h2><div class="news-art green"></div><h3>Thực hành mỗi ngày</h3><p>Mở trình duyệt và kiểm tra kết quả.</p></div>
+        </div>
+        <p class="region-label">Main content</p>
+    </div>
+    <div id="right">
+        <div class="widget">
+            <h2>Lịch</h2>
+            <p class="caption">Lịch minh họa</p>
+            <table class="calendar">
+                <thead><tr><th scope="col">T2</th><th scope="col">T3</th><th scope="col">T4</th><th scope="col">T5</th><th scope="col">T6</th><th scope="col">T7</th><th scope="col">CN</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                    <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                    <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="widget">
+            <h2>Biểu đồ</h2>
+            <div class="chart" role="img" aria-label="Biểu đồ cột minh họa, không phải dữ liệu thực"><span style="height: 35%"></span><span style="height: 65%"></span><span style="height: 48%"></span><span style="height: 85%"></span></div>
+            <p class="caption">Dữ liệu minh họa bố cục</p>
+        </div>
+        <div class="widget">
+            <h2>Bản đồ</h2>
+            <div class="map" role="img" aria-label="Hình bản đồ minh họa, không chỉ vị trí thực">
+                <svg viewBox="0 0 200 120" aria-hidden="true"><rect width="200" height="120" fill="#e0eadc"/><path d="M-10 80 210 20M40-10 120 130M-10 25 210 100" stroke="#fff" stroke-width="13" fill="none"/><path d="M145-10 Q90 60 170 130" stroke="#a8cce4" stroke-width="15" fill="none"/><circle cx="85" cy="58" r="11" fill="#b63b36"/><circle cx="85" cy="58" r="4" fill="white"/></svg>
+            </div>
+            <p class="caption">Hình minh họa, không phải bản đồ thật</p>
+        </div>
+        <p class="region-label">Right sidebar</p>
+    </div>
+    <div id="footer">
+        <span>© 2026 — Bài thực hành bố cục cơ bản</span>
+        <div class="footer-links"><a href="#main">Home</a><a href="#students">Students</a><a href="#course">Course</a><a href="#about">About Us</a></div>
+    </div>
+</div>
 </body>
 </html>
