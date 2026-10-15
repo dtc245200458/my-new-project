@@ -1,0 +1,4 @@
+$accent: #2563eb; 
+.button { background-color: $accent; color: white; padding: 12px; } 
+.button:hover { opacity: 0.8; } 
+.button:focus { outline: 2px solid black; } 

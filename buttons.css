@@ -1,0 +1,15 @@
+.button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:focus {
+  outline: 2px solid black;
+}
+
+/*# sourceMappingURL=buttons.css.map */
