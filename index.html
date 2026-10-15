@@ -3,68 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bố Cục 3 Cột bằng Bootstrap Grid và Flexbox</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Đăng ký người dùng</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4 d-flex justify-content-center align-items-center bg-light p-3">
-                <p>Phần 1</p>
-            </div>
-            <div class="col-md-4 d-flex justify-content-center align-items-center bg-secondary p-3 text-white">
-                <p>Phần 2</p>
-            </div>
-            <div class="col-md-4 d-flex justify-content-center align-items-center bg-light p-3">
-                <p>Phần 3</p>
+<body class="bg-light">
+    <main class="container py-4 py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+                <div class="card border-0 shadow overflow-hidden">
+                    <div class="row g-0">
+                        <section class="col-12 col-lg-6 bg-primary text-white" aria-label="Lợi ích của dịch vụ">
+                            <div id="benefitCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#benefitCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Lợi ích 1"></button>
+                                    <button type="button" data-bs-target="#benefitCarousel" data-bs-slide-to="1" aria-label="Lợi ích 2"></button>
+                                    <button type="button" data-bs-target="#benefitCarousel" data-bs-slide-to="2" aria-label="Lợi ích 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/learn.jpg" class="d-block w-100" width="800" height="500" alt="Minh họa tài liệu học tập trên máy tính">
+                                        <div class="text-center px-5 pt-3 pb-5">
+                                            <h2 class="h4">Học tập linh hoạt</h2>
+                                            <p class="mb-0">Truy cập tài liệu và học theo nhịp độ phù hợp với bạn.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/practice.jpg" class="d-block w-100" width="800" height="500" alt="Minh họa bài thực hành lập trình">
+                                        <div class="text-center px-5 pt-3 pb-5">
+                                            <h2 class="h4">Thực hành mỗi ngày</h2>
+                                            <p class="mb-0">Củng cố kiến thức qua những bài tập và dự án nhỏ.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/progress.jpg" class="d-block w-100" width="800" height="500" alt="Minh họa các bước tiến bộ trong học tập">
+                                        <div class="text-center px-5 pt-3 pb-5">
+                                            <h2 class="h4">Theo dõi tiến bộ</h2>
+                                            <p class="mb-0">Sắp xếp mục tiêu và ghi nhận từng bước trên hành trình học tập.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#benefitCarousel" data-bs-slide="prev" aria-label="Lợi ích trước">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#benefitCarousel" data-bs-slide="next" aria-label="Lợi ích tiếp theo">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </section>
+                        <section class="col-12 col-lg-6 p-4 p-md-5" aria-labelledby="registerTitle">
+                            <h1 id="registerTitle" class="h3">Tạo tài khoản</h1>
+                            <p class="text-muted">Bắt đầu hành trình học tập của bạn.</p>
+                            <form id="registerForm" method="post">
+                                <div class="mb-3">
+                                    <label for="fullname" class="form-label">Họ tên</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" aria-hidden="true">👤</span>
+                                        <input type="text" class="form-control" id="fullname" name="fullname" autocomplete="name" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" aria-hidden="true">@</span>
+                                        <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" name="password" autocomplete="new-password" minlength="8" aria-describedby="passwordHelp" required>
+                                    <div id="passwordHelp" class="form-text">Sử dụng ít nhất 8 ký tự.</div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                                    <input type="password" class="form-control" id="confirmPassword" name="confirm_password" autocomplete="new-password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
+                                <p class="small text-muted mt-3">Trang thực hành giao diện; dữ liệu không được gửi hoặc lưu lại.</p>
+                                <div class="alert alert-success" id="result" role="status" hidden></div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container my-5 py-3">
-        <h3 class="text-center">Khoảng cách được điều chỉnh bằng Margin &amp; Padding</h3>
-    </div>
-    <div class="d-none d-md-block bg-warning text-center p-3">
-        <p>Nội dung này chỉ hiển thị trên màn hình lớn hơn hoặc bằng 768px</p>
-    </div>
-    <div id="myCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="image1.jpg" class="d-block w-100" width="1440" height="480" alt="Hình ảnh 1">
-            </div>
-            <div class="carousel-item">
-                <img src="image2.jpg" class="d-block w-100" width="1440" height="480" alt="Hình ảnh 2">
-            </div>
-            <div class="carousel-item">
-                <img src="image3.jpg" class="d-block w-100" width="1440" height="480" alt="Hình ảnh 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev" aria-label="Hình ảnh trước">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next" aria-label="Hình ảnh tiếp theo">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-    </div>
-    <div class="container mt-5">
-        <h3><i class="fas fa-home" aria-hidden="true"></i> Trang chủ</h3>
-    </div>
-    <form class="container mt-5" method="post" id="contactForm">
-        <div class="mb-3">
-            <label for="name" class="form-label">Họ và tên</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Nhập họ và tên">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email">
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Nội dung</label>
-            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Nhập nội dung"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane" aria-hidden="true"></i> Gửi</button>
-        <p class="text-muted mt-3" id="formResult" role="status" hidden></p>
-    </form>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

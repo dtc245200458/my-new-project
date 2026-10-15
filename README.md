@@ -1,21 +1,18 @@
-# Bố cục 3 cột bằng Bootstrap Grid và Flexbox
+# Trang đăng ký người dùng: Bootstrap Forms và Carousel
 
-Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3 và Font Awesome 6.5.2. Giữ script.js và cả 3 ảnh JPEG cùng thư mục.
+Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3. Giữ script.js và thư mục images đi kèm.
 
-## Đầy đủ 6 bước
-1. container mt-5, row và 3 cột col-md-4; d-flex căn giữa nội dung.
-2. container my-5 py-3 điều chỉnh khoảng cách.
-3. d-none d-md-block ẩn nội dung dưới 768px.
-4. myCarousel có 3 ảnh cùng kích thước, tự chạy và nút trước/sau.
-5. Icon fas fa-home và fas fa-paper-plane.
-6. Form Họ và tên, Email, Nội dung, nút Gửi.
+## Nội dung
+- Carousel gồm 3 hình ảnh JPEG minh họa tự vẽ, tiêu đề và mô tả lợi ích; có indicators và nút chuyển ảnh.
+- Form gồm họ tên, email, mật khẩu và xác nhận mật khẩu.
+- Sử dụng form-control, input-group, btn-primary và Bootstrap Grid.
+- Từ 992px hai phần nằm cạnh nhau; dưới 992px xếp dọc.
+- Không viết CSS tùy chỉnh.
+- Có kiểm tra trường bắt buộc, email và mật khẩu tối thiểu 8 ký tự, xác nhận mật khẩu trùng nhau.
+- Không có backend trong đề. Submit chỉ hiển thị thông báo minh họa, không tạo tài khoản hay gửi/lưu dữ liệu.
 
-Ảnh JPEG minh họa được vẽ riêng và đóng gói. Form chỉ minh họa submit vì đề không cung cấp backend, không gửi/lưu dữ liệu.
+## Kiểm tra
+Đã kiểm tra cấu trúc HTML, ảnh, đích điều khiển Carousel, class Bootstrap, cú pháp JavaScript và mô phỏng xác nhận mật khẩu/submit. Chưa kiểm tra trực tiếp trên trình duyệt.
+Trước khi nộp: thử 3 slides và indicators, thử nhập hai mật khẩu khác nhau và dữ liệu hợp lệ, kiểm tra giao diện ở desktop và mobile.
 
-## Kiểm tra trước khi nộp
-- Từ 768px: 3 cột nằm ngang và khối màu vàng hiển thị.
-- Dưới 768px: các cột xếp dọc, khối vàng ẩn.
-- Thử nút chuyển ảnh, Carousel tự chạy, icon và nút Gửi.
-
-Đã kiểm tra cấu trúc, class Bootstrap, tài nguyên ảnh, đích Carousel và cú pháp JavaScript; chưa kiểm tra trực tiếp trên trình duyệt.
-Tải toàn bộ thư mục bootstrap-three-columns lên GitHub và nộp link thư mục/repository.
+Tải toàn bộ thư mục bootstrap-register-carousel lên GitHub và nộp link thư mục/repository.
