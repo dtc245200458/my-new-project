@@ -3,65 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu Công Ty</title>
+    <title>Bootstrap Grid System</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Điều hướng chính">
+<body class="d-flex flex-column min-vh-100">
+    <header class="bg-primary text-white text-center py-4" id="home">
         <div class="container">
-            <a class="navbar-brand" href="#">Doanh Nghiệp</a>
+            <h1>Trang web với Bootstrap Grid System</h1>
+            <p class="mb-0">Bố cục responsive với Containers và Grid</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Điều hướng chính">
+        <div class="container">
+            <a class="navbar-brand" href="#home">MyWebsite</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Mở hoặc đóng menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Trang Chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Về Chúng Tôi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Dịch Vụ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Liên Hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#intro">Giới thiệu</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nội dung</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#article">Bài viết</a></li>
+                            <li><a class="dropdown-item" href="#news">Tin tức</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Chào mừng đến với Công Ty Chúng Tôi</h1>
-        <p>Chúng tôi cung cấp các giải pháp chuyên nghiệp cho doanh nghiệp của bạn</p>
-        <a href="#services" class="btn btn-light">Tìm Hiểu Ngay</a>
-    </header>
-    <section id="about" class="container py-5">
-        <h2 class="text-center mb-4">Về Chúng Tôi</h2>
-        <p class="text-center">Công ty chúng tôi chuyên cung cấp các dịch vụ công nghệ, thiết kế website và tiếp thị kỹ thuật số.</p>
-    </section>
-    <section id="services" class="container py-5">
-        <h2 class="text-center mb-4">Dịch vụ của chúng tôi</h2>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="card p-3">
-                    <h3>Thiết kế Website</h3>
-                    <p>Thiết kế giao diện chuyên nghiệp và tối ưu hóa trải nghiệm người dùng.</p>
+    <div class="container py-4 flex-grow-1">
+        <div class="row g-4 page-grid">
+            <main class="col-12 col-md-8 col-lg-8" id="intro">
+                <div class="border rounded p-4 h-100">
+                    <h2>Nội dung chính</h2>
+                    <p>Chào mừng bạn đến với trang thực hành Bootstrap Containers và Grid System.</p>
+                    <article id="article">
+                        <h3>Bố cục linh hoạt</h3>
+                        <p>Trên màn hình từ 992px, nội dung chính chiếm 8 cột và sidebar chiếm 4 cột trong hệ lưới 12 cột.</p>
+                        <p>Trên màn hình nhỏ hơn 992px, mỗi phần chiếm toàn bộ chiều rộng và sidebar nằm dưới nội dung chính.</p>
+                    </article>
                 </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="card p-3">
-                    <h3>Marketing Online</h3>
-                    <p>Giải pháp tiếp thị số giúp doanh nghiệp của bạn phát triển.</p>
+            </main>
+            <aside class="col-12 col-md-4 col-lg-4" id="news">
+                <div class="bg-light border rounded p-4 h-100">
+                    <h2>Thông tin phụ</h2>
+                    <ul class="mb-0">
+                        <li>Bootstrap Containers</li>
+                        <li>Hệ lưới 12 cột</li>
+                        <li>Navbar và dropdown</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="card p-3">
-                    <h3>Hỗ trợ khách hàng</h3>
-                    <p>Chúng tôi cam kết hỗ trợ khách hàng 24/7.</p>
-                </div>
-            </div>
+            </aside>
         </div>
-    </section>
-    <section id="contact" class="container py-5 text-center">
-        <h2>Liên hệ với chúng tôi</h2>
-        <p>Email: contact@company.com</p>
-        <p>Hotline: 0988 123 456</p>
-    </section>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Công Ty Chúng Tôi. All rights reserved.</p>
+    </div>
+    <footer class="bg-dark text-white text-center py-3" id="contact">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 MyWebsite. All rights reserved.</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

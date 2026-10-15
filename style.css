@@ -1,51 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.header, .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.nav {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-.main-container {
-    display: flex;
-    flex: 1;
-}
-
-.content {
-    flex: 3;
-    padding: 20px;
-}
-
-.sidebar {
-    flex: 1;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
+/* Giữ col-md-8/col-md-4 theo đề nhưng chỉ chia hai cột từ 992px.
+   Bootstrap mặc định kích hoạt col-md-* từ 768px, nên cần ghi đè dưới 992px. */
+@media (max-width: 991.98px) {
+    .page-grid > .col-md-8,
+    .page-grid > .col-md-4 {
+        width: 100%;
     }
 }
