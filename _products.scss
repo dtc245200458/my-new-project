@@ -1,0 +1,34 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+.products { padding-top: 75px; padding-bottom: 75px; }
+.section-heading { @include m.row; gap: v.$space; margin-bottom: 30px;
+  p { color: v.$muted; }
+}
+.product-grid { @include m.grid(3); }
+.product { background: v.$white; border: 1px solid v.$line; border-radius: v.$radius; overflow: hidden;
+  &-art { height: 220px; position: relative; @include m.row(center); }
+  &-body { padding: v.$space; }
+  h3 { margin: 10px 0; font-size: 1.15rem; }
+  p { color: v.$muted; }
+  a { font-weight: bold; }
+}
+.art-one { background: #eee4d6; }
+.art-two { background: #e3ebdf; }
+.art-three { background: #e3e8f0; }
+.shelf { width: 70%; height: 20px; background: #ad8255; position: relative; border-radius: 4px;
+  &::before, &::after { content: ""; position: absolute; top: 20px; width: 18px; height: 48px; background: #ad8255; }
+  &::before { left: 15px; }
+  &::after { right: 15px; }
+}
+.lamp { width: 15px; height: 100px; background: v.$ink; position: relative; transform: rotate(15deg);
+  &::before { content: ""; position: absolute; width: 90px; height: 50px; background: v.$ink; border-radius: 70px 70px 8px 8px; left: -38px; top: -10px; }
+  &::after { content: ""; position: absolute; width: 80px; height: 12px; background: v.$ink; bottom: -8px; left: -32px; border-radius: 50%; }
+}
+.tray { width: 70%; height: 90px; border: 10px solid #8d9bb2; border-radius: 20px; background: #bdc9dc; @include m.row(center); gap: 12px; transform: rotate(-8deg);
+  span { width: 22px; height: 35px; background: v.$ink; border-radius: 7px; }
+}
+@include m.mobile {
+  .products { padding-top: 45px; padding-bottom: 45px; }
+  .section-heading { flex-direction: column; align-items: flex-start; gap: 0; }
+  .product-grid { grid-template-columns: 1fr; }
+}

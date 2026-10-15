@@ -1,61 +1,29 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Grid — Sass Refactoring</title>
-<link rel="stylesheet" href="css/styles.css">
+<title>Long Studio — Bộ sưu tập góc làm việc</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="inline-1">
-<div class="gridcontainer">
-<div class="gridwrapper inline-2">
-<div class="gridcontent inline-3">
-</div>
-</div>
-<div class="gridwrapper inline-4">
-  <div class="gridcontent inline-5">
-    <div class="inline-6"></div>
-    <div class="inline-6"></div>
-    <div class="inline-6"></div>
-    <div class="inline-7"></div>
-  </div>
-  <div class="gridcontent inline-8"></div>
-  <div class="gridcontent inline-8"></div>
-  <div class="gridcontent inline-8"></div>
-  <div class="gridcontent inline-8"></div>
-  <div class="gridcontent inline-8"></div>
-  <div class="gridcontent inline-8"></div>
-  <div class="gridcontent inline-5">
-    <div class="inline-9"></div>
-  </div>
-</div>
-<div class="gridwrapper inline-10">
-  <div class="gridcontent inline-11">
-  </div>
-</div>
-
-</div>
-</div>
-<div class="gridcontainer inline-12">
-<div class="gridwrapper inline-13">
-  <div class="gridcontent inline-14"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-  <div class="gridcontent inline-15"></div>
-</div>
-</div>
-
-<p>Resize the browser window to see that this grid will respond to the resizing, and always use 100% of the available space.</p>
-
-
-
-
-</body></html>
+<nav class="navigation" aria-label="Điều hướng chính"><div class="container navigation-inner">
+<a class="brand" href="#home">LONG STUDIO<span>Góc nhỏ, cảm hứng lớn.</span></a>
+<ul><li><a href="#home">Trang chủ</a></li><li><a href="#products">Sản phẩm</a></li><li><a href="#statistics">Con số</a></li><li><a href="#contact">Liên hệ</a></li></ul>
+</div></nav>
+<header class="hero" id="home"><div class="container hero-inner">
+<div><p class="eyebrow">THIẾT KẾ CHO MỖI NGÀY</p><h1>Một góc làm việc.<br>Nhiều ý tưởng mới.</h1><p class="intro">Khám phá bộ sưu tập phụ kiện tối giản để sắp xếp bàn làm việc theo cách của bạn.</p><a class="button" href="#products">Khám phá bộ sưu tập <span aria-hidden="true">↗</span></a><p class="small">Bộ sưu tập minh họa cho bài thực hành HTML, CSS và Sass.</p></div>
+<div class="hero-art" role="img" aria-label="Minh họa bàn làm việc với màn hình và cây xanh"><div class="screen"><span>&lt; create /&gt;</span></div><div class="stand"></div><div class="plant">✦</div><div class="desk"></div><div class="art-label">YOUR SPACE. YOUR IDEAS.</div></div>
+</div></header>
+<main>
+<section class="products container" id="products"><div class="section-heading"><div><p class="eyebrow">BỘ SƯU TẬP</p><h2>Sản phẩm nổi bật</h2></div><p>Ít chi tiết hơn. Thêm không gian sáng tạo.</p></div>
+<div class="product-grid">
+<article class="product"><div class="product-art art-one" role="img" aria-label="Minh họa kệ màn hình"><div class="shelf"></div></div><div class="product-body"><span class="category">SẮP XẾP</span><h3>Kệ màn hình Minimal</h3><p>Tạo khoảng trống cho sách và phụ kiện trên bàn.</p><a href="#contact">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></div></article>
+<article class="product"><div class="product-art art-two" role="img" aria-label="Minh họa đèn bàn"><div class="lamp"></div></div><div class="product-body"><span class="category">ÁNH SÁNG</span><h3>Đèn bàn Focus</h3><p>Một điểm nhấn gọn gàng cho góc làm việc.</p><a href="#contact">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></div></article>
+<article class="product"><div class="product-art art-three" role="img" aria-label="Minh họa khay đựng phụ kiện"><div class="tray"><span></span><span></span><span></span></div></div><div class="product-body"><span class="category">PHỤ KIỆN</span><h3>Khay phụ kiện Neat</h3><p>Giữ những vật dụng nhỏ trong tầm tay.</p><a href="#contact">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></div></article>
+</div></section>
+<section class="statistics" id="statistics"><div class="container"><p class="eyebrow">NHỮNG CON SỐ MINH HỌA</p><h2>Một bộ sưu tập, nhiều cảm hứng</h2><div class="stat-grid"><div><strong>12</strong><span>Thiết kế ý tưởng</span></div><div><strong>03</strong><span>Nhóm sản phẩm</span></div><div><strong>100%</strong><span>Tinh thần sáng tạo</span></div><div><strong>01</strong><span>Góc làm việc của bạn</span></div></div><p class="small">Số liệu giả định phục vụ thiết kế giao diện, không phải thống kê kinh doanh thực tế.</p></div></section>
+</main>
+<footer class="footer" id="contact"><div class="container"><div class="footer-grid"><div><h2>LONG STUDIO</h2><p>Thiết kế đơn giản cho những ý tưởng lớn.</p></div><div><h3>Khám phá</h3><a href="#home">Trang chủ</a><a href="#products">Sản phẩm nổi bật</a><a href="#statistics">Số liệu minh họa</a></div><div><h3>Kết nối</h3><a href="https://github.com/dtc245200458">GitHub của Long</a><p>Website thực hành, chưa bán hàng.</p></div></div><div class="footer-bottom"><p>&copy; 2026 Long Studio. Bài tập Sass.</p><a href="#home">Lên đầu trang ↑</a></div></div></footer>
+</body>
+</html>

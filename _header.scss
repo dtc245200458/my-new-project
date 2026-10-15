@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+.navigation { background: v.$white; border-bottom: 1px solid v.$line;
+  &-inner { @include m.row; gap: 20px; padding: 20px 0; }
+  ul { @include m.row; list-style: none; gap: 24px; padding: 0; margin: 0; flex-wrap: wrap; }
+  a { font-weight: bold; }
+}
+.brand { font-size: 1.1rem; letter-spacing: 1px;
+  span { display: block; font-size: .7rem; letter-spacing: 0; color: v.$muted; font-weight: normal; }
+}
+.hero { padding: 70px 0; background: #edf2e8;
+  &-inner { @include m.grid(2); align-items: center; gap: 55px; }
+  .intro { color: v.$muted; max-width: 480px; }
+}
+.hero-art { height: 390px; position: relative; border-radius: 50% 50% v.$radius v.$radius; background: #d7e2c7; overflow: hidden; }
+.screen { position: absolute; width: 60%; height: 48%; top: 15%; left: 20%; background: v.$ink; border: 10px solid #355c50; border-radius: 12px; @include m.row(center); color: v.$accent;
+  span { font-size: 1.6rem; }
+}
+.stand { position: absolute; width: 12%; height: 18%; top: 62%; left: 44%; background: #355c50; }
+.desk { position: absolute; width: 85%; height: 18px; top: 78%; left: 8%; background: #a38056; border-radius: 6px; }
+.plant { position: absolute; right: 7%; top: 48%; font-size: 65px; color: #62833b; }
+.art-label { position: absolute; bottom: 18px; width: 100%; text-align: center; font-size: .7rem; letter-spacing: 3px; }
+@include m.mobile {
+  .navigation-inner { align-items: flex-start; flex-direction: column; }
+  .navigation ul { gap: 16px; font-size: .85rem; }
+  .hero { padding: 40px 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: 25px; }
+  .hero-art { height: 320px; }
+}

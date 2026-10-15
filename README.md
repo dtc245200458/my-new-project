@@ -1,22 +1,25 @@
-# Tái cấu trúc Responsive Grid sang Sass
+# Tái cấu trúc CSS Landing Page với Sass
 
-## Chạy
-Mở index.html hoặc responsive_grid.htm. Giữ css/styles.css đi kèm; không cần Internet.
+## Phạm vi
+Long Studio là mẫu Landing Page mới được tạo theo lựa chọn của người học. Đây KHÔNG phải bản khôi phục mẫu thiết kế sẵn của khóa học. Vì chưa có nguồn gốc mẫu khóa học, bài này chưa thể xác nhận đáp ứng tiêu chí giữ nguyên đúng Landing Page cũ nếu người chấm đối chiếu mẫu đó.
 
-## Nguồn
-https://github.com/codegym-vn/responsive-grid
-Commit gốc ghi trong SOURCE.md. Bản gốc được lưu nguyên nội dung trong original/responsive_grid.htm.
+Có đủ bốn khu vực: navigation/header, sản phẩm nổi bật, số liệu thống kê và footer. Sản phẩm và số liệu là nội dung giả định phục vụ thiết kế. Hình minh họa được tạo bằng HTML/CSS, không cần ảnh ngoài. Không có chức năng mua hàng.
 
-## Tái cấu trúc
-- scss/main.scss: entry point dùng @use.
-- scss/abstracts/_variables.scss: độ rộng cột, màu và khoảng cách dùng lại.
-- scss/abstracts/_mixins.scss: white-column, grid-line cho các nhóm khai báo lặp.
-- scss/base/_global.scss: box-sizing.
-- scss/layout/_grid.scss: gridwrapper/gridcontent, giữ float theo nguồn.
-- scss/layout/_sections.scss: chuyển toàn bộ style nội tuyến sang class inline-N, dùng biến và mixins. Các class này ánh xạ từng nhóm style gốc, ghi lại trong original/inline-styles.json.
-- css/styles.css và styles.css.map: kết quả biên dịch thực tế.
+## Xem bài
+- Mở index.html: bản sử dụng CSS được biên dịch từ SCSS.
+- Mở original/index.html: bản dùng CSS thuần để đối chiếu.
+- Hai trang cùng nội dung và các khai báo CSS. Cặp CSS/SCSS được tạo mới trong bài này, không phải bằng chứng về trình tự chỉnh sửa một bài cũ.
 
-Các selector gốc, kích thước, màu, thứ tự hai khai báo background-color và cơ chế float được giữ nguyên. Không thay bằng CSS Grid hay thêm breakpoint mới. Hai lớp mô phỏng lưới với opacity 0.9/0.1 cũng được giữ lại. Không còn style nội tuyến trong bản refactor.
+## SCSS
+- abstracts/_variables.scss: màu sắc, khoảng cách, bo góc, breakpoint.
+- abstracts/_mixins.scss: row, grid và mobile nhận @content.
+- _base.scss: quy tắc chung.
+- components/_header.scss: navigation và hero.
+- components/_products.scss: ba sản phẩm nổi bật.
+- components/_statistics.scss: bốn nhóm số liệu.
+- components/_footer.scss: footer.
+- main.scss: tập hợp module bằng @use.
+- Dùng nesting với selector con, &-suffix, pseudo-elements và Media Query.
 
 ## Biên dịch
     sass scss/main.scss css/styles.css
@@ -24,12 +27,12 @@ Các selector gốc, kích thước, màu, thứ tự hai khai báo background-c
 Watch:
     sass scss/main.scss css/styles.css --watch
 
-Cách gọi trên máy Long nếu sass.cmd chưa hoạt động:
+Trên máy Long, nếu sass.cmd không hoạt động:
     node "%APPDATA%\npm\node_modules\sass\sass.js" scss/main.scss css/styles.css
 
 ## Kiểm tra
-Đã biên dịch thực tế bằng Dart Sass 1.105.1. Đã đối chiếu từng nhóm khai báo CSS được biên dịch với CSS trong style và toàn bộ style nội tuyến gốc: khớp giá trị và thứ tự sau khi bỏ khoảng trắng. Chưa kiểm tra trực quan trên trình duyệt.
-Để kiểm tra trực quan, mở original/responsive_grid.htm và index.html, so sánh khi thay đổi độ rộng cửa sổ.
+Đã biên dịch thực tế bằng Dart Sass 1.105.1, đối chiếu toàn bộ CSS đầu ra với bản CSS thuần, kiểm tra ID/đích liên kết nội bộ. Chưa kiểm tra trực quan trên trình duyệt.
+Mở hai trang và kiểm tra ở 1280px, 768px, 375px. Từ 768px trở xuống, header/sản phẩm/footer xếp dọc, số liệu chia hai cột.
 
-## Nộp
-Tải nguyên thư mục responsive-grid-sass lên GitHub, gồm scss, css, original và các file liên quan. Nộp link trực tiếp đến thư mục bài, tránh lẫn với bài khác.
+## Nộp bài
+Tải nguyên thư mục landing-sass-refactor lên GitHub, giữ các thư mục scss, css và original. Nộp link trực tiếp đến thư mục để người chấm thấy đủ bản SCSS và CSS.
