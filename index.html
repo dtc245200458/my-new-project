@@ -3,64 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Responsive</title>
+    <title>Layout với RWD</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header" id="home">
-        <a class="logo" href="#home">MyBrand<span>.</span></a>
-        <nav class="nav" aria-label="Điều hướng chính">
+    <div class="header" id="home">
+        <h1>Trang web Responsive</h1>
+        <p>Bố cục linh hoạt trên máy tính, máy tính bảng và điện thoại</p>
+    </div>
+    <div class="navigation" role="navigation" aria-label="Điều hướng chính">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+    </div>
+    <div class="page-layout">
+        <div class="left-sidebar">
+            <h2>Danh mục</h2>
             <ul>
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#services">Dịch vụ</a></li>
-                <li><a href="#testimonials">Đánh giá</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#services">Nội dung học tập</a></li>
+                <li><a href="#rwd">Responsive Design</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <p class="eyebrow">CÙNG XÂY DỰNG Ý TƯỞNG</p>
-            <h1>Chào mừng đến với <span>MyBrand</span></h1>
-            <p>Biến ý tưởng của bạn thành trải nghiệm số rõ ràng, dễ sử dụng.</p>
-            <a href="#services" class="btn">Tìm hiểu thêm →</a>
-        </section>
-
-        <section id="services" class="services">
-            <h2>Dịch vụ của chúng tôi</h2>
-            <p class="section-intro">Ba nhóm dịch vụ minh họa cho giao diện landing page.</p>
-            <div class="service-container">
-                <article class="service">
-                    <span class="service-number">01</span>
-                    <h3>Thiết kế web</h3>
-                    <p>Xây dựng giao diện gọn gàng, dễ đọc và thích ứng với nhiều kích thước màn hình.</p>
-                </article>
-                <article class="service">
-                    <span class="service-number">02</span>
-                    <h3>Phát triển phần mềm</h3>
-                    <p>Tổ chức các chức năng phù hợp với mục tiêu và nhu cầu sử dụng.</p>
-                </article>
-                <article class="service">
-                    <span class="service-number">03</span>
-                    <h3>Marketing số</h3>
-                    <p>Trình bày nội dung và thông điệp nhất quán trên các kênh số.</p>
-                </article>
+        </div>
+        <div class="main-content" id="about">
+            <h2>Chào mừng bạn!</h2>
+            <p>Trang web minh họa cách kết hợp DIV và CSS để tạo bố cục có thể thích ứng với kích thước màn hình.</p>
+            <div class="banner">RWD · Responsive Web Design</div>
+            <div id="services">
+                <h2>Nội dung học tập</h2>
+                <div class="cards">
+                    <div class="card"><h3>HTML</h3><p>Xây dựng các vùng nội dung và liên kết trên trang.</p></div>
+                    <div class="card"><h3>CSS</h3><p>Định dạng màu sắc, kích thước, khoảng cách và bố cục.</p></div>
+                </div>
             </div>
-        </section>
-
-        <section id="testimonials" class="testimonials">
-            <h2>Khách hàng nói gì?</h2>
-            <p class="section-intro">Nội dung đánh giá mẫu trong đề bài, không phải phản hồi khách hàng thực tế.</p>
-            <div class="testimonial-container">
-                <blockquote class="testimonial"><p>“Dịch vụ tuyệt vời!”</p><cite>Khách hàng A — minh họa</cite></blockquote>
-                <blockquote class="testimonial"><p>“Tôi rất hài lòng với MyBrand.”</p><cite>Khách hàng B — minh họa</cite></blockquote>
+            <div id="rwd">
+                <h2>Bố cục thay đổi thế nào?</h2>
+                <ul>
+                    <li>Trên 1024px: sidebar trái, nội dung và sidebar phải nằm thành ba cột.</li>
+                    <li>Từ 601px đến 1024px: hai cột; sidebar phải chuyển xuống dưới.</li>
+                    <li>Từ 600px trở xuống: tất cả các vùng xếp thành một cột.</li>
+                </ul>
             </div>
-        </section>
-    </main>
-    <footer class="footer" id="contact">
-        <p>&copy; 2026 MyBrand. All rights reserved.</p>
-        <p>Trang thực hành HTML và CSS — thương hiệu và nội dung minh họa.</p>
+        </div>
+        <div class="right-sidebar">
+            <h2>Thông tin thêm</h2>
+            <div class="info-box"><h3>Mẹo kiểm tra</h3><p>Thu nhỏ cửa sổ để quan sát bố cục chuyển đổi.</p></div>
+            <div class="info-box"><h3>Không tràn ngang</h3><p>Dùng chiều rộng linh hoạt và Media Queries để nội dung vừa màn hình.</p></div>
+        </div>
+    </div>
+    <div class="footer" id="contact">
+        <p>&copy; 2026 — Bài tập tạo layout với RWD</p>
+        <p>Bố cục tự chọn dựa trên các bài trước vì đề không kèm ảnh mẫu.</p>
         <a href="#home">Về đầu trang ↑</a>
-    </footer>
+    </div>
 </body>
 </html>

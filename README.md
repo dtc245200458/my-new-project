@@ -1,11 +1,23 @@
-# Layout với các thẻ HTML5 và CSS
+# Bài tập: Tạo layout với RWD
 
-Mở index.html, giữ style.css cùng thư mục.
-Bố cục gồm header, nav, section chứa hai article, aside và footer.
-Main bao quanh phần nội dung và sidebar. CSS dùng Flexbox cho bố cục hai cột, chuyển thành một cột ở màn hình hẹp.
-Các vùng có nhãn tên thẻ để quan sát dễ hơn; liên kết điều hướng trỏ đến nội dung trong trang.
+Đề không có ảnh mẫu. Theo lựa chọn của người học, bố cục được xây dựng dựa trên các bài trước, không khẳng định giống ảnh mẫu.
+Dùng DIV cho header, menu, sidebar trái, nội dung chính, sidebar phải và footer.
 
-Ảnh mẫu chưa truy cập được ở thời điểm tạo bài, nên bản này bám yêu cầu thẻ HTML5 và bố cục cơ bản; chưa đối chiếu chính xác với ảnh.
-Đã kiểm tra cấu trúc, thẻ yêu cầu, ID và liên kết; chưa kiểm tra trực quan trên trình duyệt.
+## Mở
+Mở index.html và giữ style.css cùng thư mục.
 
-Đăng nguyên thư mục layout-html5 lên repository hiện có và nộp link thư mục.
+## Responsive
+- Trên 1024px: ba cột.
+- 601–1024px: hai cột, sidebar phải ở hàng dưới.
+- Từ 600px trở xuống: một cột.
+Dùng CSS Grid, minmax(0,1fr), Media Queries và box-sizing:border-box.
+Menu dùng Flexbox và cho xuống hàng. Không dùng overflow:hidden để che lỗi tràn.
+Các liên kết có đích nội bộ trong trang.
+
+## Kiểm tra
+Đã kiểm tra cấu trúc, liên kết và breakpoint trong mã nguồn.
+Chưa kiểm tra trực quan trong trình duyệt.
+Cần thử ở 1366px, 768px và 390px trước khi nộp; kiểm tra cột và tràn ngang.
+
+## Nộp
+Đưa nguyên thư mục layout-rwd lên repository hiện có và nộp link thư mục.
