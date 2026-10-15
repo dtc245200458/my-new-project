@@ -3,26 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <title>Landing Page Responsive</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <nav class="navbar" aria-label="Điều hướng chính">
-        <div class="logo">MyWebsite</div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Trang chủ</a></li>
-            <li><a href="#about">Giới thiệu</a></li>
-            <li><a href="#services">Dịch vụ</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
-        </ul>
-        <button type="button" class="menu-icon" aria-controls="nav-links" aria-expanded="false" aria-label="Mở menu">☰</button>
-    </nav>
+    <header class="header" id="home">
+        <a class="logo" href="#home">MyBrand<span>.</span></a>
+        <nav class="nav" aria-label="Điều hướng chính">
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#testimonials">Đánh giá</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section id="home"><h1>Responsive Navbar</h1><p>Thu nhỏ cửa sổ xuống 768px hoặc thấp hơn để kiểm tra nút ☰.</p></section>
-        <section id="about"><h2>Giới thiệu</h2><p>Thanh điều hướng sử dụng Flexbox, Media Queries và JavaScript.</p></section>
-        <section id="services"><h2>Dịch vụ</h2><p>Menu hiển thị ngang trên desktop và có thể mở/đóng trên mobile.</p></section>
-        <section id="contact"><h2>Liên hệ</h2><p>Nội dung minh họa cho các liên kết điều hướng.</p></section>
+        <section class="hero">
+            <p class="eyebrow">CÙNG XÂY DỰNG Ý TƯỞNG</p>
+            <h1>Chào mừng đến với <span>MyBrand</span></h1>
+            <p>Biến ý tưởng của bạn thành trải nghiệm số rõ ràng, dễ sử dụng.</p>
+            <a href="#services" class="btn">Tìm hiểu thêm →</a>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Dịch vụ của chúng tôi</h2>
+            <p class="section-intro">Ba nhóm dịch vụ minh họa cho giao diện landing page.</p>
+            <div class="service-container">
+                <article class="service">
+                    <span class="service-number">01</span>
+                    <h3>Thiết kế web</h3>
+                    <p>Xây dựng giao diện gọn gàng, dễ đọc và thích ứng với nhiều kích thước màn hình.</p>
+                </article>
+                <article class="service">
+                    <span class="service-number">02</span>
+                    <h3>Phát triển phần mềm</h3>
+                    <p>Tổ chức các chức năng phù hợp với mục tiêu và nhu cầu sử dụng.</p>
+                </article>
+                <article class="service">
+                    <span class="service-number">03</span>
+                    <h3>Marketing số</h3>
+                    <p>Trình bày nội dung và thông điệp nhất quán trên các kênh số.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>Khách hàng nói gì?</h2>
+            <p class="section-intro">Nội dung đánh giá mẫu trong đề bài, không phải phản hồi khách hàng thực tế.</p>
+            <div class="testimonial-container">
+                <blockquote class="testimonial"><p>“Dịch vụ tuyệt vời!”</p><cite>Khách hàng A — minh họa</cite></blockquote>
+                <blockquote class="testimonial"><p>“Tôi rất hài lòng với MyBrand.”</p><cite>Khách hàng B — minh họa</cite></blockquote>
+            </div>
+        </section>
     </main>
+    <footer class="footer" id="contact">
+        <p>&copy; 2026 MyBrand. All rights reserved.</p>
+        <p>Trang thực hành HTML và CSS — thương hiệu và nội dung minh họa.</p>
+        <a href="#home">Về đầu trang ↑</a>
+    </footer>
 </body>
 </html>
