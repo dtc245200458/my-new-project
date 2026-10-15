@@ -1,15 +1,21 @@
-# Thực hành CSS flex-flow
+# Thực hành: Xây dựng bố cục trang web với CSS Flexbox
 
-Mở index.html bằng trình duyệt; giữ style.css cùng thư mục.
+## Chạy bài
+Giữ index.html và style.css cùng thư mục, mở index.html bằng trình duyệt.
 
-- Ví dụ 1 dùng flex-flow: row nowrap, màu #007bff. Theo hướng văn bản mặc định trái sang phải, các ô 1, 2, 3 bắt đầu từ bên trái.
-- Ví dụ 2 dùng flex-flow: row-reverse nowrap, màu #28a745. Ô 1 bắt đầu từ bên phải, tiếp theo ô 2 và ô 3 về phía trái. Thứ tự phần tử trong HTML vẫn là 1, 2, 3.
-- Mỗi ví dụ có đúng 3 Flex Item, width: 100px, margin: 10px và line-height: 50px theo đề.
-- nowrap chỉ ngăn xuống dòng, không ngăn co giãn. Các item vẫn có flex-shrink: 1 mặc định nên có thể co lại nếu thiếu chỗ.
+## Nội dung
+Giữ đúng cấu trúc HTML và CSS được cung cấp trong đề:
+- Header, Navigation, Main Content, Sidebar và Footer.
+- Container Flexbox xếp dọc, cao 100vh.
+- Main Container dùng Flexbox, nội dung flex: 3 và sidebar flex: 1.
+- Media Query max-width: 768px chuyển Main Container sang column, sidebar nằm dưới nội dung.
 
-Đã kiểm tra cấu trúc HTML, liên kết CSS và các khai báo theo đề; chưa kiểm tra trực quan trên trình duyệt.
+## Kiểm tra trên trình duyệt
+1. Mở ở chiều rộng trên 768px để xem nội dung và sidebar nằm cạnh nhau.
+2. Thu nhỏ cửa sổ xuống 768px hoặc thấp hơn để xem nội dung và sidebar xếp dọc.
+3. Kiểm tra CSS được tải và các phần hiển thị đúng.
+
+Đã kiểm tra cấu trúc, liên kết file và quy tắc CSS bằng mã; chưa kiểm tra trực quan trên trình duyệt.
 
 ## Nộp bài
-1. Mở trang trên trình duyệt và chụp ảnh cả hai ví dụ.
-2. Tải toàn bộ thư mục flex-flow lên GitHub.
-3. Nộp link repository/thư mục cùng ảnh kết quả theo yêu cầu.
+Tải toàn bộ thư mục flexbox-layout lên GitHub, sau đó sao chép link thư mục hoặc repository để nộp trên CodeGym.
