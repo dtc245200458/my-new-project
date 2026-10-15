@@ -3,59 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout với HTML5 và CSS</title>
+    <title>Bố cục với display</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="site-header" id="home">
-        <p class="tag-label">&lt;header&gt;</p>
-        <h1>Trang web HTML5</h1>
-        <p>Bố cục sử dụng các thẻ ngữ nghĩa và CSS</p>
-    </header>
-
-    <nav class="site-nav" aria-label="Điều hướng chính">
-        <span class="tag-label">&lt;nav&gt;</span>
-        <ul>
-            <li><a href="#home">Trang chủ</a></li>
-            <li><a href="#articles">Bài viết</a></li>
-            <li><a href="#related">Liên quan</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
-        </ul>
+<body id="home">
+    <h1>Bố cục trang web với display</h1>
+    <nav aria-label="Điều hướng chính">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
     </nav>
-
-    <main class="page-layout">
-        <section class="content-section" id="articles" aria-labelledby="articles-title">
-            <p class="tag-label">&lt;section&gt;</p>
-            <h2 id="articles-title">Nội dung chính</h2>
-            <article id="html5">
-                <p class="tag-label">&lt;article&gt;</p>
-                <h3>HTML5 và cấu trúc trang web</h3>
-                <p>HTML5 cung cấp các thẻ có ý nghĩa để phân chia trang web. Mỗi vùng được đặt trong phần tử phù hợp với vai trò của nội dung.</p>
-                <p>Header chứa phần giới thiệu, nav chứa liên kết điều hướng, còn footer chứa thông tin cuối trang.</p>
-            </article>
-            <article id="css-layout">
-                <p class="tag-label">&lt;article&gt;</p>
-                <h3>Tạo bố cục bằng CSS</h3>
-                <p>CSS giúp điều chỉnh màu sắc, khoảng cách và kích thước các vùng. Flexbox sắp xếp phần nội dung chính và sidebar thành hai cột.</p>
-                <p>Trên màn hình nhỏ, hai cột chuyển thành bố cục dọc để dễ theo dõi.</p>
-            </article>
-        </section>
-
-        <aside class="sidebar" id="related" aria-labelledby="related-title">
-            <p class="tag-label">&lt;aside&gt;</p>
-            <h2 id="related-title">Thông tin liên quan</h2>
-            <p>Sidebar chứa nội dung bổ trợ cho các bài viết.</p>
-            <ul>
-                <li><a href="#html5">Cấu trúc HTML5</a></li>
-                <li><a href="#css-layout">Bố cục CSS</a></li>
-            </ul>
-        </aside>
-    </main>
-
-    <footer class="site-footer" id="contact">
-        <p class="tag-label">&lt;footer&gt;</p>
-        <p>© 2026 — Bài tập tạo layout với HTML5 và CSS</p>
-        <a href="#home">Về đầu trang ↑</a>
+    <section aria-label="Nội dung ba cột">
+        <div class="box" id="about">
+            <h2>Cột 1</h2>
+            <p>Giới thiệu về trang web và cách trình bày nội dung.</p>
+        </div>
+        <div class="box" id="services">
+            <h2>Cột 2</h2>
+            <p>Khu vực giới thiệu các dịch vụ và thông tin chính.</p>
+        </div>
+        <div class="box">
+            <h2>Cột 3</h2>
+            <p>Nội dung bổ sung và những thông tin hữu ích khác.</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>Bản quyền &copy; 2026 — Bài thực hành bố cục với display</p>
     </footer>
 </body>
 </html>
