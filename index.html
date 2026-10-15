@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Long Studio — Bộ sưu tập góc làm việc</title>
-<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mỗi ngày một trang — Giới thiệu sách</title>
+<link rel="stylesheet" href="vendor/bootstrap.min.css"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navigation" aria-label="Điều hướng chính"><div class="container navigation-inner">
-<a class="brand" href="#home">LONG STUDIO<span>Góc nhỏ, cảm hứng lớn.</span></a>
-<ul><li><a href="#home">Trang chủ</a></li><li><a href="#products">Sản phẩm</a></li><li><a href="#statistics">Con số</a></li><li><a href="#contact">Liên hệ</a></li></ul>
-</div></nav>
-<header class="hero" id="home"><div class="container hero-inner">
-<div><p class="eyebrow">THIẾT KẾ CHO MỖI NGÀY</p><h1>Một góc làm việc.<br>Nhiều ý tưởng mới.</h1><p class="intro">Khám phá bộ sưu tập phụ kiện tối giản để sắp xếp bàn làm việc theo cách của bạn.</p><a class="button" href="#products">Khám phá bộ sưu tập <span aria-hidden="true">↗</span></a><p class="small">Bộ sưu tập minh họa cho bài thực hành HTML, CSS và Sass.</p></div>
-<div class="hero-art" role="img" aria-label="Minh họa bàn làm việc với màn hình và cây xanh"><div class="screen"><span>&lt; create /&gt;</span></div><div class="stand"></div><div class="plant">✦</div><div class="desk"></div><div class="art-label">YOUR SPACE. YOUR IDEAS.</div></div>
-</div></header>
+<header id="home" class="hero">
+<nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Điều hướng chính"><div class="container">
+<a class="navbar-brand fw-bold" href="#home">TRANG NHỎ<span class="brand-dot">.</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bookNav" aria-controls="bookNav" aria-expanded="false" aria-label="Mở hoặc đóng menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="bookNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+<li class="nav-item"><a class="nav-link" href="#overview">Cuốn sách</a></li><li class="nav-item"><a class="nav-link" href="#author">Tác giả</a></li><li class="nav-item"><a class="nav-link" href="#features">Điểm nổi bật</a></li><li class="nav-item"><a class="nav-link" href="#prices">Giá sách</a></li><li class="nav-item"><a class="nav-link" href="#readers">Độc giả</a></li><li class="nav-item"><a class="btn btn-warm ms-lg-3" href="#download">Đọc thử</a></li>
+</ul></div></div></nav>
+<div class="container py-5"><div class="row align-items-center g-5">
+<div class="col-lg-6"><p class="eyebrow">MỘT KHOẢNG LẶNG CHO CHÍNH BẠN</p><h1 class="display-2 fw-bold">Bắt đầu nhỏ.<br>Đi xa hơn.</h1><p class="lead mt-4">Một trang sách, một ý tưởng, một thay đổi nhỏ. Khám phá cách dành thời gian cho việc đọc và những điều có ý nghĩa mỗi ngày.</p><div class="d-flex flex-wrap gap-3 mt-4"><a href="#download" class="btn btn-warm btn-lg">Tải bản đọc thử ↓</a><a href="#overview" class="btn btn-outline-light btn-lg">Khám phá cuốn sách</a></div><p class="small mt-4 opacity-75">Sách và thương hiệu minh họa cho dự án HTML/CSS.</p></div>
+<div class="col-lg-6 text-center"><img src="assets/book.svg" class="img-fluid book-cover" width="600" height="760" alt="Bìa sách Mỗi ngày một trang, màu vàng ấm với hình minh họa cuốn sách"></div>
+</div></div></header>
 <main>
-<section class="products container" id="products"><div class="section-heading"><div><p class="eyebrow">BỘ SƯU TẬP</p><h2>Sản phẩm nổi bật</h2></div><p>Ít chi tiết hơn. Thêm không gian sáng tạo.</p></div>
-<div class="product-grid">
-<article class="product"><div class="product-art art-one" role="img" aria-label="Minh họa kệ màn hình"><div class="shelf"></div></div><div class="product-body"><span class="category">SẮP XẾP</span><h3>Kệ màn hình Minimal</h3><p>Tạo khoảng trống cho sách và phụ kiện trên bàn.</p><a href="#contact">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></div></article>
-<article class="product"><div class="product-art art-two" role="img" aria-label="Minh họa đèn bàn"><div class="lamp"></div></div><div class="product-body"><span class="category">ÁNH SÁNG</span><h3>Đèn bàn Focus</h3><p>Một điểm nhấn gọn gàng cho góc làm việc.</p><a href="#contact">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></div></article>
-<article class="product"><div class="product-art art-three" role="img" aria-label="Minh họa khay đựng phụ kiện"><div class="tray"><span></span><span></span><span></span></div></div><div class="product-body"><span class="category">PHỤ KIỆN</span><h3>Khay phụ kiện Neat</h3><p>Giữ những vật dụng nhỏ trong tầm tay.</p><a href="#contact">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></div></article>
-</div></section>
-<section class="statistics" id="statistics"><div class="container"><p class="eyebrow">NHỮNG CON SỐ MINH HỌA</p><h2>Một bộ sưu tập, nhiều cảm hứng</h2><div class="stat-grid"><div><strong>12</strong><span>Thiết kế ý tưởng</span></div><div><strong>03</strong><span>Nhóm sản phẩm</span></div><div><strong>100%</strong><span>Tinh thần sáng tạo</span></div><div><strong>01</strong><span>Góc làm việc của bạn</span></div></div><p class="small">Số liệu giả định phục vụ thiết kế giao diện, không phải thống kê kinh doanh thực tế.</p></div></section>
+<section id="overview" class="section-space"><div class="container"><div class="row g-5 align-items-center"><div class="col-lg-5"><p class="eyebrow">BOOK OVERVIEW</p><h2 class="display-6 fw-bold">Một cuốn sách.<br>Nhiều khởi đầu.</h2><p class="text-secondary">Không cần một kế hoạch hoàn hảo để bắt đầu. Hãy dành vài phút, mở một trang sách và ghi lại điều khiến bạn suy nghĩ.</p></div><div class="col-lg-7"><div class="paper-panel p-4 p-md-5"><h3 class="h4">Bạn sẽ tìm thấy gì?</h3><p>“Mỗi ngày một trang” là ý tưởng sách hướng dẫn xây dựng thói quen đọc, ghi chép và nhìn lại trải nghiệm hằng ngày.</p><ul class="chapter-list mb-0"><li><span>01</span>Tạo không gian cho việc đọc</li><li><span>02</span>Đọc chậm và đặt câu hỏi</li><li><span>03</span>Biến ghi chép thành hành động</li><li><span>04</span>Duy trì nhịp đọc của riêng bạn</li></ul></div></div></div></div></section>
+<section id="author" class="section-space soft-bg"><div class="container"><div class="row align-items-center g-5"><div class="col-md-5"><div class="author-art" role="img" aria-label="Minh họa tác giả bằng ký hiệu LS"><span>LS</span><small>LONG STUDIO<br>GÓC VIẾT NHỎ</small></div></div><div class="col-md-7"><p class="eyebrow">AUTHOR</p><h2 class="display-6 fw-bold">Đằng sau những trang viết</h2><p class="lead">Long Studio — tác giả minh họa</p><p>Nhân vật tác giả được xây dựng cho dự án, với ý tưởng chia sẻ những bài thực hành đọc và ghi chép gần gũi, dễ bắt đầu.</p><blockquote class="border-start border-3 ps-4 mt-4">“Bạn không cần đọc thật nhanh. Chỉ cần dành cho một trang sách sự chú ý trọn vẹn.”</blockquote></div></div></div></section>
+<section id="features" class="section-space"><div class="container"><div class="text-center section-heading"><p class="eyebrow">FEATURES</p><h2 class="display-6 fw-bold">Dễ đọc. Dễ thử. Dễ bắt đầu.</h2></div><div class="row g-4">
+<div class="col-md-4"><article class="feature-card h-100 p-4"><span class="feature-number">01</span><h3 class="h4 mt-4">Chương ngắn gọn</h3><p class="text-secondary mb-0">Mỗi chủ đề tập trung vào một ý tưởng để bạn có thể đọc theo thời gian của mình.</p></article></div>
+<div class="col-md-4"><article class="feature-card h-100 p-4"><span class="feature-number">02</span><h3 class="h4 mt-4">Bài tập ghi chép</h3><p class="text-secondary mb-0">Câu hỏi gợi mở giúp bạn kết nối nội dung với trải nghiệm cá nhân.</p></article></div>
+<div class="col-md-4"><article class="feature-card h-100 p-4"><span class="feature-number">03</span><h3 class="h4 mt-4">Thực hành từng bước</h3><p class="text-secondary mb-0">Bắt đầu với việc nhỏ và tự điều chỉnh nhịp đọc phù hợp mỗi ngày.</p></article></div>
+</div></div></section>
+<section id="prices" class="section-space soft-bg"><div class="container"><div class="text-center section-heading"><p class="eyebrow">PRICES</p><h2 class="display-6 fw-bold">Chọn cách bạn muốn đọc</h2><p class="text-secondary">Giá giả định cho giao diện minh họa. Trang không nhận đặt hàng hoặc thanh toán.</p></div><div class="row g-4 align-items-stretch">
+<div class="col-md-4"><article class="price-card h-100 p-4"><h3 class="h4">Bản đọc thử</h3><p class="text-secondary">Một khởi đầu nhỏ</p><p class="price">Miễn phí</p><ul><li>Đoạn trích giới thiệu</li><li>Bài tập ghi chép ngắn</li><li>Định dạng TXT</li></ul><a href="downloads/doc-thu.txt" download class="btn btn-outline-dark mt-auto">Tải ngay ↓</a></article></div>
+<div class="col-md-4"><article class="price-card recommended h-100 p-4"><p class="eyebrow">PHIÊN BẢN MINH HỌA</p><h3 class="h4">E-book</h3><p class="text-secondary">Mang theo mọi nơi</p><p class="price">89.000<span>đ</span></p><ul><li>Ý tưởng phiên bản điện tử</li><li>Gợi ý trang ghi chép</li><li>Chưa phát hành thực tế</li></ul><a href="#download" class="btn btn-dark mt-auto">Đọc thử trước</a></article></div>
+<div class="col-md-4"><article class="price-card h-100 p-4"><h3 class="h4">Sách giấy</h3><p class="text-secondary">Cảm hứng trên từng trang</p><p class="price">159.000<span>đ</span></p><ul><li>Ý tưởng phiên bản in</li><li>Thiết kế bìa tối giản</li><li>Chưa phát hành thực tế</li></ul><a href="#download" class="btn btn-outline-dark mt-auto">Khám phá bản đọc thử</a></article></div>
+</div></div></section>
+<section id="download" class="section-space download-section text-center"><div class="container"><p class="eyebrow">DOWNLOAD</p><h2 class="display-6 fw-bold">Trang đầu tiên đang chờ bạn.</h2><p class="lead mx-auto mt-3">Tải đoạn đọc thử và dành vài phút cho ý tưởng đầu tiên. Không cần đăng ký.</p><a href="downloads/doc-thu.txt" download class="btn btn-warm btn-lg mt-3">Tải bản đọc thử (.txt) ↓</a><p class="small mt-3 opacity-75">Nội dung tự viết cho dự án. Có thể mở bằng Notepad hoặc ứng dụng đọc văn bản.</p></div></section>
+<section id="readers" class="section-space"><div class="container"><div class="text-center section-heading"><p class="eyebrow">READER’S SAY</p><h2 class="display-6 fw-bold">Một trang, nhiều góc nhìn.</h2><p class="text-secondary">Nhận xét và tên độc giả dưới đây là nội dung giả định để minh họa bố cục.</p></div><div class="row g-4">
+<div class="col-md-4"><article class="reader-card h-100 p-4"><p class="stars" aria-label="5 trên 5 sao">★★★★★</p><blockquote>“Bố cục chương ngắn tạo cảm giác dễ bắt đầu, ngay cả trong một ngày bận rộn.”</blockquote><p class="fw-bold mb-0">Minh An</p><small class="text-secondary">Độc giả minh họa</small></article></div>
+<div class="col-md-4"><article class="reader-card h-100 p-4"><p class="stars" aria-label="5 trên 5 sao">★★★★★</p><blockquote>“Mình thích những câu hỏi nhỏ để ghi lại suy nghĩ sau khi đọc.”</blockquote><p class="fw-bold mb-0">Hà Linh</p><small class="text-secondary">Độc giả minh họa</small></article></div>
+<div class="col-md-4"><article class="reader-card h-100 p-4"><p class="stars" aria-label="5 trên 5 sao">★★★★★</p><blockquote>“Một ý tưởng nhẹ nhàng để tạo khoảng nghỉ giữa những giờ học và làm việc.”</blockquote><p class="fw-bold mb-0">Quang Huy</p><small class="text-secondary">Độc giả minh họa</small></article></div>
+</div></div></section>
 </main>
-<footer class="footer" id="contact"><div class="container"><div class="footer-grid"><div><h2>LONG STUDIO</h2><p>Thiết kế đơn giản cho những ý tưởng lớn.</p></div><div><h3>Khám phá</h3><a href="#home">Trang chủ</a><a href="#products">Sản phẩm nổi bật</a><a href="#statistics">Số liệu minh họa</a></div><div><h3>Kết nối</h3><a href="https://github.com/dtc245200458">GitHub của Long</a><p>Website thực hành, chưa bán hàng.</p></div></div><div class="footer-bottom"><p>&copy; 2026 Long Studio. Bài tập Sass.</p><a href="#home">Lên đầu trang ↑</a></div></div></footer>
-</body>
-</html>
+<footer class="footer py-5"><div class="container"><div class="row g-4"><div class="col-md-6"><h2 class="h4">TRANG NHỎ.</h2><p>Một khoảng lặng. Một ý tưởng mới.</p><p class="small">Dự án tĩnh giới thiệu sách bằng Bootstrap, HTML và CSS.</p></div><div class="col-6 col-md-3"><h3 class="h6">Khám phá</h3><a href="#overview">Cuốn sách</a><a href="#author">Tác giả</a><a href="#prices">Giá minh họa</a></div><div class="col-6 col-md-3"><h3 class="h6">Kết nối</h3><a href="#download">Tải đọc thử</a><a href="https://github.com/dtc245200458">GitHub của Long</a><a href="#home">Lên đầu trang ↑</a></div></div><div class="border-top border-secondary mt-4 pt-4 small">&copy; 2026 Long Studio. Nội dung và sản phẩm minh họa cho bài tập.</div></div></footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+</body></html>
