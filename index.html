@@ -1,61 +1,58 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout với RWD</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Gallery</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header" id="home">
-        <h1>Trang web Responsive</h1>
-        <p>Bố cục linh hoạt trên máy tính, máy tính bảng và điện thoại</p>
-    </div>
-    <div class="navigation" role="navigation" aria-label="Điều hướng chính">
-        <a href="#home">Trang chủ</a>
-        <a href="#about">Giới thiệu</a>
-        <a href="#services">Dịch vụ</a>
-        <a href="#contact">Liên hệ</a>
-    </div>
-    <div class="page-layout">
-        <div class="left-sidebar">
-            <h2>Danh mục</h2>
-            <ul>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#services">Nội dung học tập</a></li>
-                <li><a href="#rwd">Responsive Design</a></li>
-            </ul>
-        </div>
-        <div class="main-content" id="about">
-            <h2>Chào mừng bạn!</h2>
-            <p>Trang web minh họa cách kết hợp DIV và CSS để tạo bố cục có thể thích ứng với kích thước màn hình.</p>
-            <div class="banner">RWD · Responsive Web Design</div>
-            <div id="services">
-                <h2>Nội dung học tập</h2>
-                <div class="cards">
-                    <div class="card"><h3>HTML</h3><p>Xây dựng các vùng nội dung và liên kết trên trang.</p></div>
-                    <div class="card"><h3>CSS</h3><p>Định dạng màu sắc, kích thước, khoảng cách và bố cục.</p></div>
-                </div>
-            </div>
-            <div id="rwd">
-                <h2>Bố cục thay đổi thế nào?</h2>
-                <ul>
-                    <li>Trên 1024px: sidebar trái, nội dung và sidebar phải nằm thành ba cột.</li>
-                    <li>Từ 601px đến 1024px: hai cột; sidebar phải chuyển xuống dưới.</li>
-                    <li>Từ 600px trở xuống: tất cả các vùng xếp thành một cột.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="right-sidebar">
-            <h2>Thông tin thêm</h2>
-            <div class="info-box"><h3>Mẹo kiểm tra</h3><p>Thu nhỏ cửa sổ để quan sát bố cục chuyển đổi.</p></div>
-            <div class="info-box"><h3>Không tràn ngang</h3><p>Dùng chiều rộng linh hoạt và Media Queries để nội dung vừa màn hình.</p></div>
-        </div>
-    </div>
-    <div class="footer" id="contact">
-        <p>&copy; 2026 — Bài tập tạo layout với RWD</p>
-        <p>Bố cục tự chọn dựa trên các bài trước vì đề không kèm ảnh mẫu.</p>
-        <a href="#home">Về đầu trang ↑</a>
-    </div>
+
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" rel="noopener noreferrer" href="images/img_fjords.jpg">
+      <img src="images/img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" rel="noopener noreferrer" href="images/img_forest.jpg">
+      <img src="images/img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" rel="noopener noreferrer" href="images/img_lights.jpg">
+      <img src="images/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" rel="noopener noreferrer" href="images/img_mountains.jpg">
+      <img src="images/img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+</div>
+
 </body>
 </html>
