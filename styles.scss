@@ -1,0 +1,9 @@
+$primary-color: #16a34a;
+$spacing: 20px;
+body {
+  font-family: Arial, sans-serif;
+  padding: $spacing;
+  h1 {
+    color: $primary-color;
+  }
+}
