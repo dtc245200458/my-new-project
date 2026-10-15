@@ -1,0 +1,8 @@
+body {
+  // Property nesting giữ đầu ra font-family đúng CSS gốc.
+  font: {
+    family: Arial, sans-serif;
+  }
+  color: $text-color;
+  background: $background-color;
+}

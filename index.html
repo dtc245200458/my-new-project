@@ -1,54 +1,29 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Python — Bố cục website thực hành</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyển CSS sang SCSS</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="topbar"><div class="container">Python • PSF • Docs • PyPI • Jobs • Community</div></div>
-<header class="header" id="home">
- <div class="container">
-  <div class="brand-row"><h1>Python</h1><a class="button" href="#start">Bắt đầu học</a></div>
-  <nav class="navigation" aria-label="Điều hướng chính"><ul>
-   <li><a href="#intro">Giới thiệu</a></li><li><a href="#download">Tải xuống</a></li><li><a href="#docs">Tài liệu</a></li><li><a href="#community">Cộng đồng</a></li><li><a href="#news">Tin tức</a></li>
-  </ul></nav>
-  <section class="hero" id="intro" aria-labelledby="introTitle">
-   <pre><code>&gt;&gt;&gt; languages = ['HTML', 'CSS', 'Python']
-&gt;&gt;&gt; for language in languages:
-...     print(language)
-HTML
-CSS
-Python</code></pre>
-   <div><h2 id="introTitle">Học lập trình từng bước</h2><p>Python là ngôn ngữ lập trình được sử dụng trong nhiều lĩnh vực. Bắt đầu với những ví dụ nhỏ và phát triển kiến thức qua thực hành.</p><a href="#docs">Khám phá tài liệu</a></div>
-  </section>
-  <p class="tagline">Một trang thực hành phân tích và xây dựng cấu trúc Website Template.</p>
- </div>
-</header>
-<main class="container content">
- <section class="quick-grid" aria-label="Các nội dung chính">
-  <article id="start"><h2>Bắt đầu</h2><p>Làm quen với cú pháp và các khái niệm cơ bản.</p><a href="https://www.python.org/about/gettingstarted/">Hướng dẫn nhập môn</a></article>
-  <article id="download"><h2>Tải xuống</h2><p>Tìm bộ cài phù hợp với hệ điều hành của bạn.</p><a href="https://www.python.org/downloads/">Trang tải Python</a></article>
-  <article id="docs"><h2>Tài liệu</h2><p>Tra cứu hướng dẫn và ví dụ về ngôn ngữ.</p><a href="https://docs.python.org/">Tài liệu chính thức</a></article>
-  <article id="community"><h2>Cộng đồng</h2><p>Kết nối, chia sẻ và học hỏi cùng người học khác.</p><a href="https://www.python.org/community/">Tìm hiểu cộng đồng</a></article>
- </section>
- <div class="detail-grid">
-  <section id="news"><h2>Tin tức</h2><ul><li>Cập nhật kiến thức lập trình.</li><li>Khám phá tài nguyên học tập.</li><li>Luyện tập những bố cục mới.</li></ul></section>
-  <section><h2>Sự kiện</h2><ul><li>Buổi chia sẻ kiến thức.</li><li>Hoạt động học tập cộng đồng.</li><li>Thực hành dự án nhỏ.</li></ul></section>
-  <section><h2>Câu chuyện học tập</h2><p class="quote">Bắt đầu bằng một bài tập nhỏ và kiên trì cải thiện mỗi ngày.</p></section>
-  <section><h2>Ứng dụng</h2><p>Phát triển web • Xử lý dữ liệu • Tự động hóa công việc</p></section>
- </div>
- <section class="foundation"><h2>Cùng xây dựng cộng đồng học tập</h2><p>Tìm hiểu thêm về Python và các tài nguyên trên trang chính thức.</p><a class="button" href="https://www.python.org/">Xem website gốc</a></section>
-</main>
-<footer class="footer">
- <div class="container footer-grid">
-  <div><h2>Giới thiệu</h2><a href="#intro">Tổng quan</a><a href="#start">Bắt đầu</a></div>
-  <div><h2>Tài nguyên</h2><a href="#download">Tải xuống</a><a href="#docs">Tài liệu</a></div>
-  <div><h2>Cộng đồng</h2><a href="#community">Kết nối</a><a href="#news">Tin tức</a></div>
-  <div><h2>Bài thực hành</h2><p>Mô phỏng bố cục cơ bản của Python.org.</p></div>
- </div>
- <div class="copyright"><p>&copy; 2026 Long — Bài thực hành HTML &amp; CSS.</p><p>Website học tập độc lập, không phải trang chính thức của Python.</p></div>
-</footer>
+  <main class="container">
+    <h1>Chuyển đổi CSS sang SCSS</h1>
+    <div class="card">
+      <h2>Tổ chức mã nguồn dễ bảo trì</h2>
+      <p>Bài thực hành sử dụng biến, mixins, nesting và partials.</p>
+      <p><a class="button" href="#structure">Xem cấu trúc</a></p>
+    </div>
+    <section id="structure">
+      <h2>Cấu trúc SCSS</h2>
+      <ul>
+        <li>abstracts: biến và mixins.</li>
+        <li>base: định dạng chung.</li>
+        <li>layout: bố cục container.</li>
+        <li>components: button và card.</li>
+        <li>main.scss: tập hợp các partials.</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>

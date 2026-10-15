@@ -1,9 +1,7 @@
-$primary-color: #16a34a;
-$spacing: 20px;
-body {
-  font-family: Arial, sans-serif;
-  padding: $spacing;
-  h1 {
-    color: $primary-color;
-  }
-}
+// Giữ @import theo Bước 5 của đề bài.
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/global";
+@import "layout/container";
+@import "components/buttons";
+@import "components/cards";
