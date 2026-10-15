@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hoạt Hình Vui</title><link rel="stylesheet" href="style.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục bằng Float</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<div class="header"><a class="logo" href="#home">▶ Hoạt Hình <span>Vui</span></a><span class="tagline">Góc giải trí và học điều hay</span></div>
-<div class="head-link"><a href="#home">Trang chủ</a><a href="#library">Danh sách phim</a><a href="#guide">Hướng dẫn</a></div>
-<div class="content" id="home">
-<div class="left-content" id="library"><h1>Khám phá hoạt hình</h1>
-<label for="search">Tìm theo tên phim</label><input id="search" type="search" placeholder="Nhập tên phim…">
-<label for="sort">Sắp xếp</label><select id="sort"><option value="newest">Mới cập nhật</option><option value="views">Nhiều lượt mở trên máy này</option></select>
-<p class="small">Lượt mở được ghi trên trình duyệt, không phải thống kê toàn hệ thống.</p>
-<div id="video-list" aria-live="polite"></div><p id="empty" hidden>Không tìm thấy phim phù hợp.</p>
-</div>
-<div class="right-content">
-<div class="player-wrap">
-<video id="player" controls playsinline preload="metadata" poster="media/hello.jpg" width="1280" height="720"><source src="media/hello.mp4" type="video/mp4">Trình duyệt không hỗ trợ video HTML5.</video>
-<iframe id="youtube" title="Video hoạt hình trên YouTube" hidden allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<p id="play-error" role="status" hidden>Không tải được video. Hãy giải nén đầy đủ thư mục media và giữ đúng cấu trúc file.</p>
-<h2 id="video-title">Lời chào thân thiện</h2><p id="video-meta"></p><p id="video-description"></p>
-<a id="external-link" target="_blank" rel="noopener noreferrer" hidden>Mở trên YouTube nếu không phát được ↗</a>
-<div id="guide" class="guide"><h2>Hướng dẫn xem</h2><p>Chọn phim bên trái, rồi bấm Play. Bạn có thể tìm theo tên và đổi thứ tự danh sách.</p><p>Ba clip mẫu do người tạo bài dựng, 1280 × 720, có chữ tiếng Việt và chưa có thuyết minh. Không tự phát âm thanh hoặc video.</p><p>Mục YouTube dùng để thực hành iframe; chất lượng, quảng cáo và khả năng nhúng do YouTube kiểm soát. Đây là bản học tập, chưa phải thư viện phim thuyết minh hoàn chỉnh.</p></div>
-</div></div>
-<div class="footer">© 2026 Hoạt Hình Vui — Bài thực hành HTML, CSS và JavaScript. Clip mẫu tự dựng; video tham khảo thuộc Blender Foundation.</div>
-<script src="script.js"></script>
-</body></html>
+    <div class="container">
+        <div class="left-column">Cột bên trái chứa nội dung chính</div>
+        <div class="right-column">Cột bên phải chứa sidebar</div>
+    </div>
+</body>
+</html>

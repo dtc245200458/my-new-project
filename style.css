@@ -1,1 +1,27 @@
-*{box-sizing:border-box}html{scroll-padding-top:120px}body{margin:0;padding-top:76px;background:#f3f6fb;color:#20334a;font:15px/1.6 Arial,sans-serif}.header{position:fixed;top:0;left:0;width:100%;height:76px;padding:0 30px;background:white;border-bottom:1px solid #dce5ef;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:1000}.logo{font-size:26px;font-weight:bold;color:#174c86}.logo span{color:#a8491c}.tagline{font-size:13px;color:#54677e}a{text-decoration:none;color:#174c86}a:hover{font-weight:bold;color:#a8491c}.head-link{background:#e6eef8;display:flex;justify-content:center;gap:30px;padding:12px 20px}.content{display:flex;gap:24px;max-width:1440px;margin:auto;padding:26px 24px;align-items:flex-start}.left-content{width:330px;flex-shrink:0;background:white;padding:20px;border:1px solid #dce5ef;border-radius:10px}.right-content{flex:1;min-width:0;background:white;padding:20px;border:1px solid #dce5ef;border-radius:10px}h1{font-size:21px;margin:0 0 16px}h2{font-size:23px;line-height:1.35}label{display:block;font-size:13px;font-weight:bold;margin-top:12px}input,select{width:100%;font:inherit;padding:9px 10px;border:1px solid #aabbd0;border-radius:6px}.small{font-size:11px;color:#54677e}.film{display:block;width:100%;padding:10px;margin-top:14px;border:1px solid #dce5ef;border-radius:8px;text-align:left;background:white;cursor:pointer;color:inherit;font:inherit}.film:hover{border-color:#174c86;background:#f0f6fd}.film[aria-pressed=true]{border:2px solid #174c86;background:#eaf2fc}.film img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:5px}.film strong{display:block;margin-top:6px}.film small{display:block;color:#53657a}.player-wrap{aspect-ratio:16/9;background:#122234;border-radius:8px;overflow:hidden}video,iframe{display:block;width:100%;height:100%;border:0}#video-meta{font-size:13px;color:#52667c}.guide{padding:18px;background:#f0f5fb;border-radius:8px;margin-top:22px}.guide h2{font-size:19px;margin-top:0}.guide p{font-size:13px}.footer{text-align:center;padding:24px;background:#e6eef8;font-size:12px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #c46a1c;outline-offset:3px}[hidden]{display:none!important}@media(max-width:900px){.left-content{width:260px}.content{padding:18px;gap:16px}.tagline{display:none}}@media(max-width:650px){.header{padding:0 16px;height:66px}.logo{font-size:23px}body{padding-top:66px}.content{flex-direction:column}.left-content,.right-content{width:100%}.right-content{order:-1}.head-link{gap:18px;font-size:13px}.right-content{padding:14px}.film{display:grid;grid-template-columns:105px 1fr;column-gap:12px}.film img{grid-row:1/3}.film strong{font-size:14px;margin:0}.film small{font-size:11px}.guide{padding:12px}}
+.container {
+    width: 100%;
+}
+
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    /* Giữ padding trong 38% chiều rộng để không làm cột rớt xuống. */
+    box-sizing: border-box;
+}
+
+/* Clearfix: giúp container bao quanh cả hai cột float. */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
