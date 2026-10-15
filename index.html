@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập Box Model 1</title>
+    <title>Fixed Top Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="card">
-            <p>Thẻ 1: content-box. Padding và border được cộng thêm vào kích thước đã khai báo.</p>
-        </div>
-        <div class="card">
-            <p>Thẻ 2: border-box. Padding và border nằm trong kích thước 280 × 150px.</p>
-        </div>
-        <div class="card">
-            <p>Thẻ 3: border-box. Kích thước tương tự thẻ 2, nhưng có nền màu đỏ.</p>
-        </div>
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+    <main class="main">
+        <section id="home">
+            <h1>Fixed Top Menu</h1>
+            <h2>Scroll this page to see the effect</h2>
+            <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+            <p>Some text some text some text some text...</p>
+            <p>Some text some text some text some text...</p>
+        </section>
+        <section id="news">
+            <h2>News</h2>
+            <p>This page demonstrates a navigation bar fixed to the top of the viewport.</p>
+            <p>Continue scrolling. The navigation bar stays visible while the content moves.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the contact section used to demonstrate an internal navigation link.</p>
+            <p>You can use the navigation bar to return to Home or move to About.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This practice page uses position: fixed, top: 0 and width: 100%.</p>
+            <p>The content has extra space at the top so the fixed menu does not cover it.</p>
+        </section>
     </main>
+    <footer class="fixed-footer">Fixed Footer — CSS positioning practice</footer>
 </body>
 </html>

@@ -1,14 +1,18 @@
-﻿# my-new-project
+# Fixed Header và Fixed Footer
 
-Bài thực hành tạo dự án mới trên GitHub.
+Mở index.html; giữ style.css cùng thư mục.
+Menu dùng position: fixed, top: 0, width: 100%.
+Footer dùng position: fixed, bottom: 0, width: 100%, bổ sung theo tiêu đề bài.
+Các đích Home/News/Contact/About tồn tại; scroll-margin-top tránh menu che tiêu đề khi chuyển phần.
+margin-top và padding-bottom dành chỗ cho header/footer.
+Dùng min-height thay height cố định để không giới hạn chiều cao nội dung.
 
-## Mục tiêu
-Khởi tạo Local Repository, liên kết với Remote Repository và đưa mã nguồn lên GitHub bằng Git.
+## Kiểm tra
+1. Mở trang và cuộn xuống; menu luôn nằm ở đỉnh màn hình, footer nằm ở đáy.
+2. Bấm từng liên kết; phần tương ứng hiện và không bị menu che.
+3. Cuộn đến cuối; nội dung không bị footer che.
+Đã kiểm tra cấu trúc và đích liên kết trong mã nguồn; chưa kiểm tra trực quan bản chạy.
 
-## Ý nghĩa các lệnh Git
-- git init -b main: Khởi tạo kho Git với nhánh ban đầu là main.
-- git remote add origin <URL>: Thêm địa chỉ kho GitHub, đặt tên remote là origin.
-- git remote -v: Kiểm tra địa chỉ các remote.
-- git add README.md: Đưa README.md vào vùng staging để chuẩn bị commit.
-- git commit -m "Add README.md file": Tạo commit với thông điệp mô tả thay đổi.
-- git push -u origin main: Đẩy nhánh main lên origin và thiết lập nhánh theo dõi.
+## Nộp bài
+Đăng cả ba file cùng cấp vào thư mục fixed-menu trong repository hiện có, không ghi đè các bài cũ.
+Nộp link thư mục fixed-menu trên GitHub.
