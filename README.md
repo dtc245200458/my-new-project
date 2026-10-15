@@ -1,18 +1,19 @@
-# Landing Page với Bootstrap và hình ảnh
+# Thực hành: Xây dựng Trang Chủ với Bootstrap
 
-Mở index.html bằng trình duyệt có Internet để tải Bootstrap CSS 5.3.0. Giữ style.css và thư mục images cùng vị trí.
+## Chạy
+Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3 và Font Awesome 6.5.2. Giữ script.js, image1.jpg và image2.jpg cùng thư mục.
 
-## Yêu cầu
-- Hero tự xây dựng bằng container, row, col, py-5; không dùng jumbotron.
-- Hero có hình ảnh lớn, tiêu đề, giới thiệu và CTA.
-- Giới thiệu: một row gồm hình ảnh và văn bản.
-- Tính năng: một row gồm 3 cột, mỗi cột có icon, tiêu đề và mô tả.
-- Images dùng img-fluid; hai ảnh SVG được vẽ riêng và đóng gói, không phụ thuộc URL ảnh ngoài.
-- CTA dùng btn-primary, btn-lg và có đích thật.
-- Grid xếp dọc trên mobile; tính năng chia 3 cột từ 768px; Hero chia 2 cột từ 992px.
-- WebStart là chủ đề minh họa, không phải dịch vụ đăng ký thực tế.
+## Nội dung theo đề
+- Navbar có Font Awesome fas fa-home, menu collapse.
+- Carousel heroCarousel gồm hai ảnh JPEG minh họa được vẽ riêng, cùng kích thước 1440x480; có nút trước/sau và data-bs-ride="carousel".
+- Display d-block, Flexbox d-flex, justify-content-center, align-items-center.
+- Khoảng cách dùng py-5, mt-4, mb-3.
+- Form gồm tên, email và nút Gửi.
+- Các liên kết Navbar giữ href="#" theo ví dụ.
+- Form chỉ minh họa gửi dữ liệu vì đề không có backend; script.js ngăn gửi và hiển thị thông báo, không lưu dữ liệu.
 
-Đã kiểm tra cấu trúc HTML, tài nguyên ảnh SVG, liên kết nội bộ, các class Bootstrap và file ZIP; chưa kiểm tra trực tiếp trên trình duyệt.
+## Kiểm tra
+Đã kiểm tra cấu trúc HTML, liên kết ảnh, kích thước JPEG, đích collapse/carousel và cú pháp JavaScript. Chưa kiểm tra trực tiếp trên trình duyệt.
+Mở bài để thử chuyển hai ảnh, tự chạy Carousel, menu mobile và form trước khi nộp.
 
-Trước khi nộp: kiểm tra ở 1280px, 768px và 375px; xem ảnh và icon; thử các nút CTA.
-Tải cả thư mục bootstrap-landing-images (bao gồm images) lên GitHub, nộp link thư mục hoặc repository.
+Tải toàn bộ thư mục bootstrap-home lên GitHub và nộp link thư mục hoặc repository.
