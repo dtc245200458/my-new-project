@@ -3,33 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bố cục với display</title>
+    <title>Bố cục với Float và Overflow</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="home">
-    <h1>Bố cục trang web với display</h1>
-    <nav aria-label="Điều hướng chính">
-        <a href="#home">Trang chủ</a>
-        <a href="#about">Giới thiệu</a>
-        <a href="#services">Dịch vụ</a>
-        <a href="#contact">Liên hệ</a>
-    </nav>
-    <section aria-label="Nội dung ba cột">
-        <div class="box" id="about">
-            <h2>Cột 1</h2>
-            <p>Giới thiệu về trang web và cách trình bày nội dung.</p>
-        </div>
-        <div class="box" id="services">
-            <h2>Cột 2</h2>
-            <p>Khu vực giới thiệu các dịch vụ và thông tin chính.</p>
-        </div>
-        <div class="box">
-            <h2>Cột 3</h2>
-            <p>Nội dung bổ sung và những thông tin hữu ích khác.</p>
-        </div>
-    </section>
-    <footer id="contact">
-        <p>Bản quyền &copy; 2026 — Bài thực hành bố cục với display</p>
-    </footer>
+<body>
+    <h1>Bố cục trang với float và overflow</h1>
+    <div class="container">
+        <div class="left-column">Nội dung bên trái</div>
+        <div class="right-column">Nội dung bên phải</div>
+    </div>
+    <div class="overflow-box" tabindex="0" role="region" aria-label="Nội dung dài có thể cuộn">
+        Đây là nội dung rất dài mà chúng ta kiểm tra overflow. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nội dung vượt quá chiều cao của khối sẽ không tràn ra ngoài mà có thể xem bằng cách cuộn bên trong.
+        Hãy đặt chuột vào khối màu đỏ nhạt rồi cuộn xuống để đọc phần còn lại.
+        Float giúp sắp xếp hai cột sang trái và phải. Clear giúp khối bên dưới không nằm cạnh các phần tử float.
+        Overflow auto chỉ hiển thị thanh cuộn khi cần thiết, giúp giữ bố cục gọn gàng.
+    </div>
 </body>
 </html>
