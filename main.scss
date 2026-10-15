@@ -1,6 +1,3 @@
-// Tập hợp partials theo cách dùng biến toàn cục trong mẫu bài học.
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/typography";
-@import "components/buttons";
-@import "components/cards";
+@use "base/global";
+@use "layout/grid";
+@use "layout/sections";

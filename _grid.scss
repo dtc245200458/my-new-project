@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as v;
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: 250px;
+}
+.gridcontent {
+  width: v.$column-width;
+  margin: 0;
+  border-right: 1px solid v.$grid-border;
+  height: 100%;
+  float: left;
+  background-color: #84c754;
+  background-color: v.$grid-background;
+}

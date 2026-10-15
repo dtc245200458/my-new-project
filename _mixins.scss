@@ -1,13 +1,11 @@
-@mixin button-style($bg-color) {
-  background: $bg-color;
-  color: white;
-  padding: $padding-standard;
-  border-radius: 5px;
+@use "variables" as v;
+
+@mixin white-column {
+  background-color: v.$white;
+  border: none;
 }
 
-@mixin box-style {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: $box-shadow-default;
+@mixin grid-line {
+  background-color: v.$white;
+  border-right: 1px solid v.$black;
 }
