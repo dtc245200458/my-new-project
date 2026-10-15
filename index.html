@@ -1,55 +1,43 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nova Phone — Giới thiệu sản phẩm</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple web Development Template</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white border-bottom" aria-label="Điều hướng chính">
- <div class="container">
-  <a class="navbar-brand fw-bold" href="#home">Nova Phone</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#productNav" aria-controls="productNav" aria-expanded="false" aria-label="Mở menu"><span class="navbar-toggler-icon"></span></button>
-  <div class="collapse navbar-collapse" id="productNav"><ul class="navbar-nav ms-auto">
-   <li class="nav-item"><a class="nav-link" href="#design">Thiết kế</a></li>
-   <li class="nav-item"><a class="nav-link" href="#features">Tính năng</a></li>
-   <li class="nav-item"><a class="nav-link" href="#discover">Khám phá</a></li>
-  </ul></div>
- </div>
-</nav>
-<main>
- <header class="container text-center py-5" id="home">
-  <p class="text-primary fw-semibold">NOVA PHONE</p>
-  <h1 class="display-3 fw-bold">Tinh giản. Đầy cảm hứng.</h1>
-  <p class="lead text-secondary my-4">Một ý tưởng điện thoại dành cho kết nối, sáng tạo và những khoảnh khắc thường ngày.</p>
-  <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-4">
-   <div class="action-contents"><a href="#features" class="btn btn-primary rounded-pill px-4">Tìm hiểu thêm</a><a href="#design" class="btn btn-outline-primary rounded-pill px-4">Khám phá thiết kế</a></div>
-  </div>
-  <img src="images/phone.svg" class="img-fluid rounded-4" width="1000" height="700" alt="Minh họa mặt trước và mặt sau điện thoại Nova Phone màu xanh">
- </header>
- <section class="bg-light py-5" id="design" aria-labelledby="designTitle">
-  <div class="container"><div class="row g-4 align-items-center">
-   <div class="col-12 col-md-6"><h2 class="display-6 fw-bold" id="designTitle">Thiết kế tập trung vào trải nghiệm.</h2><p class="text-secondary mt-3">Đường nét gọn gàng, tông xanh nhẹ và giao diện rõ ràng tạo nên ý tưởng sản phẩm hiện đại, dễ tiếp cận.</p></div>
-   <div class="col-12 col-md-6"><div class="bg-white rounded-4 p-4 p-lg-5"><i class="fa-solid fa-mobile-screen-button fa-3x text-primary mb-4" aria-hidden="true"></i><h3 class="h4">Nội dung là trung tâm</h3><p class="mb-0 text-secondary">Không gian hiển thị rộng rãi giúp hình ảnh và thông tin được trình bày nổi bật.</p></div></div>
-  </div></div>
- </section>
- <section class="container py-5" id="features" aria-labelledby="featuresTitle">
-  <h2 class="text-center fw-bold mb-5" id="featuresTitle">Khám phá những điểm nổi bật</h2>
-  <div class="row g-4">
-   <div class="col-12 col-md-4"><div class="h-100 bg-light rounded-4 p-4"><i class="fa-solid fa-camera fa-2x text-primary mb-3" aria-hidden="true"></i><h3 class="h5">Lưu giữ khoảnh khắc</h3><p class="mb-0">Ý tưởng camera giúp bạn kể câu chuyện bằng hình ảnh.</p></div></div>
-   <div class="col-12 col-md-4"><div class="h-100 bg-light rounded-4 p-4"><i class="fa-solid fa-bolt fa-2x text-primary mb-3" aria-hidden="true"></i><h3 class="h5">Trải nghiệm liền mạch</h3><p class="mb-0">Tập trung vào thao tác đơn giản và nội dung dễ tìm kiếm.</p></div></div>
-   <div class="col-12 col-md-4"><div class="h-100 bg-light rounded-4 p-4"><i class="fa-solid fa-shield-halved fa-2x text-primary mb-3" aria-hidden="true"></i><h3 class="h5">Chủ động kết nối</h3><p class="mb-0">Đề cao khả năng quản lý thông tin và lựa chọn của người dùng.</p></div></div>
-  </div>
- </section>
- <section class="bg-dark text-white text-center py-5" id="discover"><div class="container">
-  <h2 class="fw-bold">Tiếp tục khám phá thiết kế sản phẩm</h2><p class="my-3">Xem trang iPhone được đề bài dùng làm nguồn tham khảo.</p>
-  <a href="https://www.apple.com/iphone/" class="btn btn-light rounded-pill px-4">Xem trang tham khảo</a>
- </div></section>
-</main>
-<footer class="container py-4 text-center text-secondary small"><p class="mb-0">Nova Phone là sản phẩm giả định cho bài tập Bootstrap. Hình ảnh minh họa tự vẽ; đây không phải website Apple hay trang bán hàng.</p></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li class="logo"><img src="logo.png" alt="Web Development logo"></li>
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#course">Courses</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search" aria-label="Search">
+            <button class="btn btn-sm" type="button">Search</button>
+        </div>
+    </nav>
+    <section class="firstsection">
+        <div class="box-main"><div class="firstHalf">
+            <h1 class="text-big" id="web">Web Technology</h1>
+            <p class="text-small">HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup language is used to define the text document within tag which defines the structure of web pages. HTML is a markup language that is used by the browser to manipulate text, images, and other content to display it in the required format.</p>
+        </div></div>
+    </section>
+    <section class="secondsection">
+        <div class="box-main"><div class="secondHalf">
+            <h1 class="text-big" id="program">C Programming</h1>
+            <p class="text-small">C is a procedural programming language. It was initially developed by Dennis Ritchie as a system programming language to write operating system. The main features of C language include low-level access to memory, simple set of keywords, and clean style, these features make C language suitable for system programming like operating system or compiler development.</p>
+        </div></div>
+    </section>
+    <section class="section" id="course">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java</h1>
+            <p class="sectionSubTag text-small">Java has been one of the most popular programming language for many years. Java is Object Oriented. However it is not considered as pure object oriented as it provides support for primitive data types (like int, char, etc) The Java codes are first compiled into byte code (machine independent code). Then the byte code is run on Java Virtual Machine (JVM) regardless of the underlying architecture.</p>
+        </div>
+        <div class="thumbnail"><img src="img.png" alt="laptop image"></div>
+    </section>
+    <footer class="background"><p class="text-footer">Copyright ©-All rights are reserved</p></footer>
 </body>
 </html>

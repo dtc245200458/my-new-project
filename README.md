@@ -1,22 +1,18 @@
-# Trang giới thiệu sản phẩm với Bootstrap
+# Template web page using HTML and CSS
 
-## Chạy
-Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3, Bootstrap bundle và Font Awesome 6.5.2. Giữ style.css và images/phone.svg đi kèm.
+Mở index.html bằng trình duyệt. Giữ style.css, logo.png và img.png cùng thư mục. Ảnh PNG minh họa được vẽ riêng, trang hoạt động offline.
 
-## Nội dung
-Sản phẩm giả định Nova Phone, ảnh SVG tự vẽ; không đưa thông số hay giá thương mại chưa được kiểm chứng.
-Tham khảo ý tưởng trang https://www.apple.com/iphone/: hình sản phẩm lớn, tiêu đề nổi bật, CTA và các phần tính năng. Không sao chép toàn bộ giao diện.
+Giữ nội dung và các quy tắc CSS trong mẫu, bao gồm nền xanh lá/xanh dương, chiều cao 400px, secondHalf rộng 30%, sticky navbar và thumbnail bên phải.
 
-## Kỹ thuật
-- Bootstrap container, row, col-12, col-md-6 và col-md-4.
-- Margin/padding bằng my-4, mb-4, mb-5, py-5, p-4, p-lg-5.
-- d-flex, flex-wrap, justify-content-center, align-items-center, gap-3 cho CTA.
-- CSS riêng chỉ có display: contents trên phần tử bọc CTA không mang ý nghĩa ngữ nghĩa; các nút trở thành Flex Item của cha.
-- Font Awesome cho các tính năng; img-fluid cho ảnh.
-- Navbar collapse dưới 992px, các cột nội dung xếp dọc dưới 768px.
+Các sửa nhỏ:
+- CSS .rightNav khớp class="rightNav" trong HTML.
+- Thêm id="course" cho section Java để liên kết Courses có đích.
+- Đổi phần tử bọc logo trong ul từ div sang li để cấu trúc danh sách hợp lệ.
+- Thêm charset, viewport và alt cho ảnh.
 
-## Kiểm tra
-Đã kiểm tra cấu trúc HTML, tài nguyên SVG, đích menu/CTA, Grid và display: contents bằng mã nguồn. Chưa kiểm tra trực tiếp trên trình duyệt.
-Mở ở desktop và mobile, thử menu, các nút CTA và kiểm tra icon trước khi nộp.
+Nút Search chỉ là giao diện theo mẫu; đề không cung cấp xử lý tìm kiếm. Class section-Left được khai báo theo đề nhưng không áp dụng lên section Java để giữ ảnh bên phải. Có thể thêm class này để thử row-reverse.
+Font Piazzolla và Ubuntu có fallback serif/sans-serif vì đề không cung cấp file font.
+Mẫu có kích thước cố định và không có Media Query; chưa tối ưu mobile. Không tự thay đổi các thông số bố cục trong đề.
 
-Tải cả thư mục bootstrap-product lên GitHub rồi nộp link thư mục hoặc repository.
+Đã kiểm tra cấu trúc HTML, đích liên kết, tài nguyên PNG và liên kết CSS; chưa kiểm tra trực tiếp trên trình duyệt.
+Tải toàn bộ thư mục html-css-template lên GitHub và nộp link thư mục/repository.
