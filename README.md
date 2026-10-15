@@ -1,18 +1,22 @@
-# Trang đăng ký người dùng: Bootstrap Forms và Carousel
+# Trang giới thiệu sản phẩm với Bootstrap
 
-Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3. Giữ script.js và thư mục images đi kèm.
+## Chạy
+Mở index.html bằng trình duyệt có Internet để tải Bootstrap 5.3.3, Bootstrap bundle và Font Awesome 6.5.2. Giữ style.css và images/phone.svg đi kèm.
 
 ## Nội dung
-- Carousel gồm 3 hình ảnh JPEG minh họa tự vẽ, tiêu đề và mô tả lợi ích; có indicators và nút chuyển ảnh.
-- Form gồm họ tên, email, mật khẩu và xác nhận mật khẩu.
-- Sử dụng form-control, input-group, btn-primary và Bootstrap Grid.
-- Từ 992px hai phần nằm cạnh nhau; dưới 992px xếp dọc.
-- Không viết CSS tùy chỉnh.
-- Có kiểm tra trường bắt buộc, email và mật khẩu tối thiểu 8 ký tự, xác nhận mật khẩu trùng nhau.
-- Không có backend trong đề. Submit chỉ hiển thị thông báo minh họa, không tạo tài khoản hay gửi/lưu dữ liệu.
+Sản phẩm giả định Nova Phone, ảnh SVG tự vẽ; không đưa thông số hay giá thương mại chưa được kiểm chứng.
+Tham khảo ý tưởng trang https://www.apple.com/iphone/: hình sản phẩm lớn, tiêu đề nổi bật, CTA và các phần tính năng. Không sao chép toàn bộ giao diện.
+
+## Kỹ thuật
+- Bootstrap container, row, col-12, col-md-6 và col-md-4.
+- Margin/padding bằng my-4, mb-4, mb-5, py-5, p-4, p-lg-5.
+- d-flex, flex-wrap, justify-content-center, align-items-center, gap-3 cho CTA.
+- CSS riêng chỉ có display: contents trên phần tử bọc CTA không mang ý nghĩa ngữ nghĩa; các nút trở thành Flex Item của cha.
+- Font Awesome cho các tính năng; img-fluid cho ảnh.
+- Navbar collapse dưới 992px, các cột nội dung xếp dọc dưới 768px.
 
 ## Kiểm tra
-Đã kiểm tra cấu trúc HTML, ảnh, đích điều khiển Carousel, class Bootstrap, cú pháp JavaScript và mô phỏng xác nhận mật khẩu/submit. Chưa kiểm tra trực tiếp trên trình duyệt.
-Trước khi nộp: thử 3 slides và indicators, thử nhập hai mật khẩu khác nhau và dữ liệu hợp lệ, kiểm tra giao diện ở desktop và mobile.
+Đã kiểm tra cấu trúc HTML, tài nguyên SVG, đích menu/CTA, Grid và display: contents bằng mã nguồn. Chưa kiểm tra trực tiếp trên trình duyệt.
+Mở ở desktop và mobile, thử menu, các nút CTA và kiểm tra icon trước khi nộp.
 
-Tải toàn bộ thư mục bootstrap-register-carousel lên GitHub và nộp link thư mục/repository.
+Tải cả thư mục bootstrap-product lên GitHub rồi nộp link thư mục hoặc repository.
